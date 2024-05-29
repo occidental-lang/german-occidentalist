@@ -533,6 +533,11 @@ ul#searchresults span.teaser em {
     margin-block-start: 0.6em;
 }
 
+.chapter li.chapter-item img {
+	width: 16px;
+	height: 16px;
+}
+
 .chapter li.expanded > a.toggle div {
     transform: rotate(90deg);
 }
