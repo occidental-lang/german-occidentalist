@@ -1,0 +1,15 @@
+[book]
+title = "German Occidentalist"
+description = "Digitalisat numerós del bulletine del German Occidental-Federation."
+authors = ["Deutscher Occidental-Sprachbund"]
+language = "ie"
+multilingual = false
+src = "src"
+
+[output.html]
+no-section-label = true
+default-theme = "occ"
+preferred-dark-theme = "occ"
+
+[output.html.search]
+use-boolean-and = true
