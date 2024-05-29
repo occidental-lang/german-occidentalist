@@ -1,0 +1,880 @@
+<!DOCTYPE HTML>
+<html lang="ie" class="occ" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>German Occidentalist</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Digitalisat numerós del bulletine del German Occidental-Federation.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="https://occidental-lang.com/favicon.ico">
+        <link rel="shortcut icon" href="https://occidental-lang.com/favicon.ico">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "occ" : "occ";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('occ')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Information</a></li><li class="chapter-item expanded affix "><li class="part-title">1933</li><li class="chapter-item expanded "><a href="1.html">Nró. 1</a></li><li class="chapter-item expanded "><a href="2.html">Nró. 2</a></li><li class="chapter-item expanded "><a href="3.html">Nró. 3</a></li><li class="chapter-item expanded "><a href="5.html">Nró. 5</a></li><li class="chapter-item expanded "><a href="6.html">Nró. 6</a></li><li class="chapter-item expanded "><a href="7.html">Nró. 7</a></li><li class="chapter-item expanded "><a href="8.html">Nró. 8</a></li><li class="chapter-item expanded "><a href="9.html">Nró. 9</a></li><li class="chapter-item expanded affix "><li class="part-title">1934</li><li class="chapter-item expanded "><a href="13.html">Nró. 13</a></li><li class="chapter-item expanded "><a href="14.html">Nró. 14</a></li><li class="chapter-item expanded "><a href="15.html">Nró. 15</a></li><li class="chapter-item expanded "><a href="16.html">Nró. 16</a></li><li class="chapter-item expanded "><a href="17.html">Nró. 17</a></li><li class="chapter-item expanded "><a href="18.html">Nró. 18</a></li><li class="chapter-item expanded "><a href="19.html">Nró. 19</a></li><li class="chapter-item expanded "><a href="20.html">Nró. 20</a></li><li class="chapter-item expanded "><a href="21.html">Nró. 21</a></li><li class="chapter-item expanded "><a href="22.html">Nró. 22</a></li><li class="chapter-item expanded "><a href="23.html">Nró. 23</a></li><li class="chapter-item expanded "><a href="24.html">Nró. 24</a></li><li class="chapter-item expanded affix "><li class="part-title">1935</li><li class="chapter-item expanded "><a href="25.html">Nró. 25</a></li><li class="chapter-item expanded "><a href="26.html">Nró. 26</a></li><li class="chapter-item expanded "><a href="27.html">Nró. 27</a></li><li class="chapter-item expanded "><a href="28.html">Nró. 28</a></li><li class="chapter-item expanded "><a href="29.html">Nró. 29</a></li><li class="chapter-item expanded "><a href="30.html">Nró. 30</a></li><li class="chapter-item expanded "><a href="31.html">Nró. 31</a></li><li class="chapter-item expanded "><a href="32.html">Nró. 32</a></li><li class="chapter-item expanded "><a href="33.html">Nró. 33</a></li><li class="chapter-item expanded "><a href="34.html">Nró. 34</a></li><li class="chapter-item expanded "><a href="35.html">Nró. 35</a></li><li class="chapter-item expanded "><a href="36.html">Nró. 36</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Comutar tabelle de contenete" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button style="display: none;" id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul style="display: none;" id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Serchar. (Curt comande: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">German Occidentalist</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Printar German Occidentalist" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Serchar in German Occidentalist ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p style="text-align: center;"><img src="img/german-occidentalist.png" alt="German Occidentalist" /></p>
+<h2 id="benevenit"><a class="header" href="#benevenit">Benevenit!</a></h2>
+<p>Ci vu trova li numerós 1 til 36 (sin 4, 10, 11, 12) del revúe <em>German Occidentalist</em>, editet in li annus 1930 del German Occidental-Federation (Deutscher Occidental-Sprachbund).</p>
+<p>Li federation inviat it al membres por informar pri su activitá, ma it contenet anc altri articules pri divers temas. Li activitá del federation, quel havet 24 membres, esset prohibit del guvernament national-socialistic in junio 1936.</p>
+<p>Li textu de omni numerós es traserchabil per cliccar li lupe-simbol in supra a levul. Li simboles in li menú a levul indica li lingue(s) in quel(es) chascun numeró es scrit.</p>
+<p>Vu posse vider li originales in forme de images digital sur li websitu del Biblioteca National de Austria (<a href="https://digital.onb.ac.at/RepViewer/viewer.faces?doc=DOD_60772">1933</a>, <a href="https://digital.onb.ac.at/RepViewer/viewer.faces?doc=DOD_60773">1934–35</a>).</p>
+<div class="warning">
+Por scopes de scientie, resercha e civic information pri li mundlinguistic movement, ti-ci págines provide textus del epoca del national-socialisme. Li creatores del págines distantia se clarmen de omni contenete quel promoe, justifica, glorifica o bagatellisa national-socialistic opiniones, scopes o organisationes.
+<p>Zu Zwecken von Wissenschaft, Forschung und staatsbürgerlicher Aufklärung über die Weltsprachebewegung stellen diese Seiten Texte aus der Zeit des Nationalsozialismus zur Verfügung. Die Ersteller der Seiten distanzieren sich ausdrücklich von allen Inhalten, die nationalsozialistische Anschauungen, Ziele oder Organisationen bewerben, rechtfertigen, verherrlichen oder verharmlosen.</p>
+</div>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="german-occidentalist"><a class="header" href="#german-occidentalist">German Occidentalist</a></h1>
+<p><strong>№  1. 1933.</strong></p>
+<p>Mitteilungsblatt des Deutschen Occidental-Bundes, Berlin-Bernau.</p>
+<hr />
+<p>Berlin-Bernau, Januar 1933.</p>
+<h2 id="rundschreiben-an-alle-mitglieder-und-freunde-des-bundes"><a class="header" href="#rundschreiben-an-alle-mitglieder-und-freunde-des-bundes">Rundschreiben an alle Mitglieder und Freunde des Bundes.</a></h2>
+<p>Der Deutsche Occidental-Bund (German Occidental-Federation) wurde am 8. und 9. Oktober 1932 in Leipzig gegründet, um der deutschen Occidental-Bewegung einen festen, organisatorischen Zusammenhalt zu geben. Zur Gründungssitzung waren Occidentalisten aus Berlin, Leipzig, Dresden und Köln anwesend. Der Bund fordert nicht nur alle deutschen Freunde des Occidental, sondern darüber hinaus auch sämtliche Freunde der fortschrittlichen Weltsprachebewegung auf, sich ihm anzuschließen und durch tatkräftige Mitarbeit das gemeinsame Ideal der Verwirklichung näher zu bringen. Die Mitglieder, Freunde und Gönner des Bundes erhalten fortlaufend Nachricht über die Tätigkeit des Bundes.</p>
+<p>Der Jahresbeitrag ist auf 4.– RM festgesetzt worden. Es wird um rechtzeitige Zahlung gebeten, evt. viertel- oder halbjährlich, auf das Postscheckkonto 696 76 Berlin (Willy Mildebrath, Berlin-Bernau, Siedlung). Das Bundesmitteilungsblatt ›German Occidentalist‹ wird nur an die Bundesmitglieder versandt und ist käuflich nicht zu erwerben. Offizielles Organ des Bundes ist die Zeitschrift <em>Cosmoglotta</em>.</p>
+<p>Der Vorstand besteht aus folgenden Herren:</p>
+<ul>
+<li>Präsident: Dr. Karl Schüppel, Parchim in Mecklenburg;</li>
+<li>Sekretariat: Dr. Peipers, Köln, Am Römerturm 13;</li>
+<li>Administration: Willy Mildebrath, Berlin-Bernau, Siedlung;</li>
+<li>Briefkurse: Walter Karch, Lehrer, Leipzig, Klarastr. 20.</li>
+</ul>
+<p>Das ›<em>Comité propagativ e consultativ</em>‹ besteht aus den Herren: Dr. Schüppel (Vorsitzender des Comité), Dr. Peipers, W. Mildebrath, K. Neumann, Dr. Wormser, M. A. Fritzsche, M. Singer, J. Gär und J. Ponnier.</p>
+<p>Bei Anfragen genügt die Anschrift: Deutscher Occidental-Bund, Berlin-Bernau. Es wird gebeten, Rückporto beizulegen und sich in jeder Occidental-Angelegenheit <em>nur</em> mit der Bundesgeschäftsstelle in Verbindung zu setzen, damit eine schnelle Erledigung gewährleistet ist. – Zugleich bescheinigt der Bund mit herzlichem Dank, folgende <em>Subventionen</em> erhalten zu haben: Herr M. A. Fritzsche, Leipzig: 8.– RM; Herr Dr. Wormser, Offenbach: 20.– RM.</p>
+<p>Wir empfehlen unseren Mitgliedern, folgende Zeitschriften durch Abonnement zu unterstützen:</p>
+<ul>
+<li><em>COSMOGLOTTA</em> (Stockholm), Official organ bimensual del Occidental-Union; Redakteur Dr. phil. B. Blomé; jährlich 2.– RM;</li>
+<li><em>HELVETIA</em> (Chapelle-Vaud, Schweiz), Organ del Sviss Association por Occidental (SAPO); Redakteur Prof. Ric. Berger, Morges; jährlich 2.50 Schweiz. Fr.;</li>
+<li><em>OCCIDENTAL</em> (Brno XII, ČSR), Bimensual revue por omnilateral application del l. i. Occidental; Redakteur Jan. A. Kajš; jährlich 13 Kč;</li>
+<li><em>OVRE</em> (Tábor, ČSR), Bibliotheca redactet in Occ., Redakteur Prof. H. Pašma; Heft 3-5 Kč.</li>
+</ul>
+<p>Wir weisen ganz besonders auf die für Deutsche wertvollen Hilfsbücher zum Studium des Occidental hin:</p>
+<ul>
+<li><em>LEITFADEN DER WELTSPRACHE OCCIDENTAL</em>, von Karl Janotta. Lehrgang in 7 Kapiteln, Lesestücke und ausführliches Wörterverzeichnis. 80 St., illustriert; mit Porto –.50;</li>
+<li><em>OCCIDENTAL, DIE WELTSPRACHE</em>. Das große Hand- und Lehrbuch. Mitarbeiter: E. Pigal, A. Z. Ramstedt, E. v. Wahl, J. Prórok, E. Graber u. a. – 256 St. Geheftet 2.80 RM; Gebunden 4.– RM.</li>
+<li><em>DEUTSCH-OCCIDENTAL WÖRTERBUCH</em>, von Joseph Gär. 460 + 16 St. 3.20 RM.</li>
+<li><em>RADICARIUM DIRECTIV</em>, Wurzelwörterbuch in 8 Sprachen. 178 St. 3.20 RM.</li>
+</ul>
+<p>Die Bundesgeschäftsstelle liefert diese und auch alle anderen Bücher usw. über Occidental in fremden Sprachen (Englisch, Französisch, Italienisch, Tschechisch, Schwedisch usw.) gegen Voreinsendung oder Nachnahme des Rechnungsbetrages.</p>
+<p>Mit der Bitte um Mitarbeit</p>
+<p><em>Deutscher Occidental-Bund</em> (German Occidental-Federation), Berlin-Bernau. Postscheck Berlin 696 76.</p>
+<hr />
+<p>Die Erlernung des Occidental ist eine kulturelle Bereicherung der Persönlichkeit, sozusagen ein Zauberschlüssel, der einem das Tor in die höhere Kulturwelt öffnet. Occidental ist das DEMOKRATISCHE LATEIN.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="german-occidentalist-1"><a class="header" href="#german-occidentalist-1">German Occidentalist</a></h1>
+<p><strong>№  2. 1933.</strong></p>
+<p>Mitteilungsblatt des Deutschen Occidental-Bundes, Berlin-Bernau.</p>
+<hr />
+<h2 id="necrolog"><a class="header" href="#necrolog">Necrolog.</a></h2>
+<p>Noi complee li trist deve informar li german Occidentalistes que nor estimat coidealist senior KARP WALLON, Dresden, ha morit li 7 august 1932, in li etá de quinant-nin e demi annus. Li morte liberat le de un long e dolorosi maladesse.</p>
+<p>It es un conosset fact que senior WALLON esset li „senioro del tutmonda Esperantistaro“. Durant plu quam quarant-un annus il practicat Esperanto. Il scrit mult articules in e por Esperanto e anc adaptat li german unitari stenographie a Esperanto, in un excellent maniere. Malgré li mult relationes queles ligat le con li Esperanto-movement, il transeat in 1930 a Occidental pos har studiat li libre pri Novial de prof. Jespersen. Naturalmen li Esperantistes esset in un grand consternation e savet salvar li honore de lor „kara lingvo“ solmen per dir que it esset un „ago nepripensita“ de sr. WALLON, quande il decidet transear a Occidental.</p>
+<p>Sr. WALLON ja in 1930 fat li unésim labores por li organisation del german Occidental-movement. Maladesse e partial ciecitá impedit le continuar su action por Occidental. KARP WALLON restat fidel a Occidental till su morte. Noi Occidentalistes in Dresden, qui conosset le personalmen, regreta ex profund cordie har perdit in WALLON ne solmen un expert e fervent mundilinguist, ma anc un nobil hom e ínobliviabil amico. Li Occidentalistes del tot munde va unir se con nos in li sentiment de gratitude a KARP WALLON, e in li desira que il mey reposar in pace.</p>
+<p>K. N.</p>
+<h2 id="styra-ad-nord-west"><a class="header" href="#styra-ad-nord-west">Styra ad Nord-West!</a></h2>
+<p>Ex li libre: Li grand mysterie, de E. Nilson. Trad. de Dr. Karl Schüppel.</p>
+<p>In li annu 1828 li scot Robert Bruce, alor circa triant annus old, fat servicie quam pilot sur un nave mercatori, quel eat inter Liverpool e St. John in Nov-Brunswick. Ne lontan del coste de Nov-Fundland un die li styrmann Bruce in su cabine hat inprofundat-se in li calculation del longitúdine, e incontent pri li resultat, vocat al cayute vicin del capitan, quem il opinet esser tá: „Qualmen vu descovrit it?“ Regardante super li epol, il opinet vider li capitan, qui scrit in su cayute. Proque il recivet null response, il eat a tá e videt, quande li scritor levat su cap, un totalmen foren visage, quel fixmen regardat le. Bruce precipitat ad-supra sur li deck e communicat su perviventie al capitan. Quande ambi descendet, nequi esset visibil, ma sur li scri-tabul del capitan on leet in un absolutmen inconnosset scritura: Styra ad nord-west! On comparat li scri-maniere de omni persones sur li nave, queles posset scrir – nequel similat ti sur li tabul. On perserchat li tot nave, ma null celat individuo esset trovat. Li capitan, quel in li max desfavorabil casu perdit quelc hores, in fact decidet, styrar vers nord-west. E ja bentost venit in visu un wrack bloccat per glacie. Esset un nave destinat a Quebec, quel havet un accident. Equipage e passageros trovat-se in extrem misere. Quande li botes apportat li naufragiantes ad bord, Bruce resaltat, vidente un hom, qui secun fysionomie e vestiment in tut similat ti quem il videt scrient in li cayute. Li capitan petit li salvat, scrir sur li dorsal látere de su scri-tabul: „Styra ad nord-west!“, e vide, it esset li sam scritura. Li capitan del accidet nave rapportat, que li scritor in medie-die cadet in profund dorme e dit pos su avigilantie: „Hodie noi es salvat, nam yo somniat, que yo es ad bord de un nave advenient por nor salvation“. Plu tard il, secun li rapport del, descrit li ship in un tal detal’at maniere, que it stat strax reconnosset, quande it realmen apparit. E li scritor self affirmat, que omnicos sur li nave semblat le absolutmen connosset, tant clar il videt it in li somnie.</p>
+<hr />
+<p>Autographie K. Neumann.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="german-occidentalist-2"><a class="header" href="#german-occidentalist-2">German Occidentalist</a></h1>
+<p><strong>№  3. 1933.</strong></p>
+<p>Mitteilungsblatt des Deutschen Occidental-Bundes, Berlin-Bernau.</p>
+<hr />
+<h2 id="propagande-experienties-e-consilies"><a class="header" href="#propagande-experienties-e-consilies">Propagande, Experienties e consilies.</a></h2>
+<p><em>Dr. Peipers, Köln.</em></p>
+<p>"Ach so, Sie meinen Esperanto ..." To es li stereotypic response, quande on prova interessar alquem por l’idé de mundlingue generalmen e specialmen nostri system. On ne mey colerar; inter cent homes respondent talmen, ne mem <em>un</em> connosse Espo; illi solmen conosse li <em>nomine</em>, li <em>parol</em> Espo, ne li cose self. Illi solmen save que to es li nómine de un system de mundlingue. Un vermen lamentabil resultate de un intensiv propagande de 40 annus! Ma no; yo ha obliviat ancor quelccos: ti propagande ha successat anc suggester al publicum, que Espo es „generalmen diffuset“. Quande vu questiona: esque vu ha videt alquande un commercial lettre in Espo, o un vitrine con l’inscrition „oni parolas Esperanton“? vu va reciver li response: no, ma on ha racontat me que Espo es officialmen instructet in li scoles in mult landes. Ma anc li divulgation de menties e risibil exagerationes es un success tre dubitabil; li Espistes mey creder que ti grand diffusion de lor legendes va auxiliar les quande li Societé del Nationes va decider ... nostri amicos save que anc to es un chimere.</p>
+<p>Pro to nostri coidealistes mey ni inquietar-se pro li „successes“ de Espo, ni polemisar contra it. To vell esser un inutil dissipation de nostri forties. Per exemple li Espistes nu fa un grand bruida por lor ho-annual internation. congress in Köln-Cologne; li „Kölnische Illustrierte Zeitung“ ha publicat un articul pri Espo e li congress. Quel va esser li effecte? Quelc dozenes de curios homes va esser seductet ... <em>comensar</em> apprender Espo; ma qui va continuar e perseverar? On save per multannual experienties, que li grand majorité de ti novicios bentost abandona totalmen li cose. In fact li tot Espo-moventie e su success es un illusion, e it ne vale li pena combatter it.</p>
+<p>Adver it ne es facil evitar un polemica, justmen pro ti grand divulgation de fals opiniones.</p>
+<p>In nostri propagande noi incontra altri impedimentes plu grav quam Espo: intellectual indolentie, manca de activ interesse, prejudicies e ... chovinisme.</p>
+<p>Por trovar li maxim apt medies de propagande, noi deve representar nos, in quel maniere li mundlingue va esser introductet. Ta es imaginabil du vias: introduction per li practica, to es in li international correspondenties de int. organisationes, commercial firmas etc.; ti via sembla esser intrabil facilmen por nostri system pro su immediat comprensibilitá. Do ci es un camp de activitá promissent bon success, e noi deve serchar ci li special medies; p.ex.: bon traductiones de commercial textus, reclames, lettres, annuncias; divulgation de nostri folies de propagande e del prospectes de Franckh che li organisationes queles have international relationes.</p>
+<p>Li altri via es: interessar li autorités, de queles li final decision va depender, li Societé del Nationes, li ministeries de instruction, li philologos, li instructores etc. In ti direction mult efforties ja es fat; ma ti labore ne es facil, presc omni linguistes have un frisson contra l’idé de un artificial lingue, quel illi conosse solmen in su espistic form. Ma <em>un</em> linguist quel reconosse Occidental quam acceptibil solution del problem, vale plu quam cent mil Espistes. Do: ples demonstrar Occidental al philologos!</p>
+<p>In omni casu nostri propagande postula un bon lingual exercitie; noi va tornar nos preferabilmen a homes capabil criticar nos, e coram illi noi deve evitar un mal impression.</p>
+<h2 id="un-lingual-genie"><a class="header" href="#un-lingual-genie">Un lingual genie</a></h2>
+<p>Till nu li cardinal Mezzofanti posset tener li record in polyglotticitá. Il savet „solmen“ ottant lingues, e un altri polyglott de nor témpore, senior Krebs, conosset plu quam sixant lingues. Krebs esset un alt officiat in li Officie por extran afferes del German guvernament. Il morit quelc mensus ante nu, e su successor es Dr. Tassilo Schultheiß, gymnasial preceptor, qui save plu quam cent e quarant lingues. Schultheiß studiat li max mult lingues per li auxilie del Bible, sin studiar li grammatica. Secun su opinion it es che li apprension de un lingue lu max important, penetrar in li psychic installation del altri pópul. Tande li comprension del grammatica veni de self. Il save sixant europan lingues, inter illi dec germanic, decun romanic, decquin slavic, decun finnic-ugric, decquar semitic lingues, anc Volapük e Esperanto, <em>ma ne Occidental</em>.</p>
+<p>N.</p>
+<hr />
+<p>Autographie K. Neumann.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="german-occidentalist-3"><a class="header" href="#german-occidentalist-3">German Occidentalist</a></h1>
+<p><strong>№  5. 1933</strong></p>
+<p>Mitteilungsblatt des Deutschen Occidental-Bundes, Berlin-Bernau. – Mai 1933.</p>
+<hr />
+<h2 id="jahrestagung-und-pfingsttreffen-1933-der-deutschen-occidentalisten"><a class="header" href="#jahrestagung-und-pfingsttreffen-1933-der-deutschen-occidentalisten">Jahrestagung und Pfingsttreffen 1933 der deutschen Occidentalisten</a></h2>
+<p>Der Deutsche Occidental-Bund lädt hiermit die Freunde und Förderer des Occidental in Deutschland, herzlichst ein zu der Pfingsten 1933 (4./5. Juni) stattfindenden 2. Tagung des Bundes. Der Ort der Tagung ist Berlin-<em>Bernau</em>, Schönower Chaussee 50. Sonnabend, den 3. Juni, nachmittags 5 Uhr: Eröffnungssitzung und Bekanntgabe der Tagesordnung. Sonntag, den 4. Juni, vormittags 10 Uhr: Besprechung von Bundesangelegenheiten. Nachmittags Besichtigung des alten Hussitenstädtchens Bernau, anschliessend Waldpartie. Abends Festkommers. Bei rechtzeitiger Anmeldung wird für Unterkunft und Verpflegung Vorsorge getroffen. Anmeldungen schnellsten erbeten an</p>
+<p>Deutscher Occidental-Bund Berlin-Bernau. Administration Willy Mildebrath.</p>
+<h2 id="silvio-gesell"><a class="header" href="#silvio-gesell">Silvio Gesell</a></h2>
+<p>Li mult economic desfacilitás de nor témpore memora nos a un mann, qui ja mult decennies ante nu inventet un novi theorie del órdine economic. It es li morit grand-commerciant Silvio Gesell, qui creat ungrandios ovre, quem il self nominat li „natural órdine del economie“. Desde plu quam quarant annus omni capitalistic landes refusat ti theorie, proque on totalmen misconnosset it. On ne volet reconnosser it por ne indangerar lu til nu practicat, precipue li valuta aurin, e por conservar it. Nu li témpore ha venit por presentar li ovre de Silvio Gesell e specialmen li idé de su „pecunie diminutiv“ (G = Schwundgeld).</p>
+<p>Hodie li actualissim question jace in li politic territorie del valuta. Li aure ha perdit su signification quam fundament del valuta e it es necessi ear novi vias. To monstra Silvio Gesell postulante un modification del moné conform al altevoluet modern economie. Li novi theorie de Silvio Gesell applica li moné solmen quam medie de change. Li function del pecunie deve effectuar solmen li change de merces. Li augmentation o li diminution ne plu depende del affluenties o defluenties de aure, ma li stabilitá del pecuni-valore jace in li proportionat precies del merces. Li novi moné necessimen deve circular; si on retene it, tande su valore diminue se automaticmen. In consecuentie de to nequi va retener li moné ma retroducter it tam rapid quam possibil denove al economic vive. Naturalmen existe divers possibilitás por realisar li idées de Silvio Gesell. Li spacie disponibil ne suffice por explicar omnicos detal’atmen. Pro to noi recommenda li excellent libre de Karl Walker: „Das Problem unserer Zeit und seine Meisterung“ (Li problema de nor témpore e su mastrization). Forsan mult complicationes de nor hodial economic vive vell esser evitat si on vell provar soluer li problema del moné in ti direction.</p>
+<p>W. M.</p>
+<hr />
+<p><em>Coidealistes qui desira corresponder</em> con occidentalistes in Anglia, Francia e Svissia, es petit indicar lor adresses al administration del German Occidental-Federation (Berlin-Bernau), e pri quel themas illi desira corresponder.</p>
+<hr />
+<p>Ples ne obliviar abonnar li excellent revues por e in Occidental</p>
+<p><strong>Cosmoglotta</strong> (annu 2.– RM) e <strong>Helvetia</strong> (annu 2.– RM.)</p>
+<p>per li administration de nor federation.</p>
+<p>Postchec Berlin <strong>696.76.</strong></p>
+<p>N.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="german-occidentalist-4"><a class="header" href="#german-occidentalist-4">German Occidentalist</a></h1>
+<p><strong>№  6. 1933.</strong></p>
+<p>Mitteilungsblatt des Deutschen Occidental-Bundes, Berlin-Bernau. – Juni 1933.</p>
+<hr />
+<h2 id="vergebliche-mühe"><a class="header" href="#vergebliche-mühe">Vergebliche Mühe...</a></h2>
+<p>Durch die deutsche Tagespresse ging vor kurzem die Nachricht, dass in den gelehrten Kreisen Roms eine Bewegung entstanden sei, die den Gebrauch des Latein als Weltsprache wiederbeleben möchte. Das Institut der Römischen Studien betont, daß der Verwendung des Latein auf Kongressen weniger Schwierigkeiten begegnen dürften als der irgend einer anderen Sprache; denn die Kenntnis des Latein sei für jede tiefere wissenschaftliche Bildung unerläßlich, sie werde auch durch die Katholische Kirche verbreitet und sei leichter zu erlernen als manche moderne Sprache [?]. Die Faschistische Partei Italiens unterstützt diese Bestrebungen, da sie alles begrüßt, was die Erinnerung an das alte Rom stärken kann.</p>
+<p>Wir als Weltsprachler und Occidentalisten haben nicht viel dazu zu sagen. „Lebensprozesse sind keine umkehrbaren Prozesse,“ sagt Edgar von Wahl, „und Gestorbenes ist nicht wieder lebendig zu machen, darum sind auch die Versuche, das Latein wieder zu neuem Leben aufzuerwecken, allesamt fehlgeschlagen.“ – Aufbau und Wortschatz des Latein gehören einem längst vergangenen Kulturabschnitt an und zwingen uns zu einer durchgreifenden Modernisierung. Jeder kann sich davon überzeugen, daß Edgar v. Wahl in seinem Occidental mit genialer Einfühlung eine Konzentration des heute noch lebenden Latein geschaffen hat, die den Ansprüchen des modernen sprachlichen Lebens in jeder Beziehung gerecht wird. Wer Occidental kennt, weiss, daß damit nicht zu viel gesagt ist.</p>
+<p>Ebenso grotesk wirkt es, wenn wir in einer großen deutschen Tageszeitung lesen: „Basic Englisch – Eine neue Weltsprache – ... Seit etwa zehn Jahren arbeitet Professor Ogden von der Universität Cambridge an einer Zusammenstellung des für die alltäglichen Bedürfnisse unumgänglich notwendigen Wortschatzes. Als Grundlage für ein universales Verständigungsmittel empfiehlt er das ‚Basic-Englisch‘, das zunächst von etwa 500 Millionen Menschen ohne weiteres verstanden werden würde. Nach seinen Feststellungen kommt man mit 850 Wörtern aus (600 Substantiva, 150 Adjektiva und 100 Konstruktionsworte), die im Basic-Wörterbuch verzeichnet sind und in der Auswahl fast zu gleichen Teilen germanische und romanische Sprachwurzeln berücksichtigen... Der entscheidende Grundsatz ist die Zerlegung aller komplizierten Begriffe in ihre Grundbestandteile oder ihre Umschreibung durch Elementarwörter. Durch Bedeutungswandel (Begriffserweiterung und Begriffsverengung), durch Erweiterungsmöglichkeiten (Ableitung und Zusammensetzung) lassen sich die Grundworte höchst vielseitig verwenden. Einer Ergänzung durch die international gebräuchlichen Fachausdrücke steht nichts im Wege...“</p>
+<p>Wir können der Welt zu diesem Pidgin-Europäisch nur Glück wünschen. Das praktische Leben hat zu oft bewiesen, daß solche <em>Teil</em>lösungen des Weltspracheproblems immer mehr oder weniger etwas Dilettantenhaftes an sich haben. So wird wohl trotz aller guten Absichten auch das Basic-Englisch nur auf dem Papier stehen bleiben und sich nicht durchsetzen können. Wäre es nicht besser, sich gleich einer zeitgemässen und wirklich verwertbaren <em>Ganz</em>lösung, wie sie das Occidental darstellt, zuzuwenden, anstatt Zeit und Kraft in der Wiederholung nutzloser Versuche zu verschwenden?</p>
+<p>Überall fragt man den Fachmann und lässt sich beraten, und nur in der Weltsprachenfrage experimentiert jeder für sich frisch und fröhlich los, ohne sich erst einmal mit dem vertraut gemacht zu haben, was andere auf diesem Gebiete vor ihm gedacht und geschaffen haben. Wann wird das einmal ein Ende nehmen?</p>
+<p>N.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="german-occidentalist-5"><a class="header" href="#german-occidentalist-5">German Occidentalist</a></h1>
+<p><strong>№  7. 1933.</strong></p>
+<p>Mitteilungsblatt des Deutschen Occidental-Bundes in Berlin-Bernau. – Juli 1933.</p>
+<hr />
+<h2 id="occidental-lebt-wächst-und-wirkt"><a class="header" href="#occidental-lebt-wächst-und-wirkt">Occidental lebt, wächst und wirkt!</a></h2>
+<p>Jede Sache trägt den Prüfstein ihres Wertes in sich selbst. Wer einmal in das Wesen des Occidental eingedrungen ist, der lächelt nur noch, wenn ihn jemand fragt: „Was nützt Ihnen Occidental?“ – Occidental zu kennen bedeutet geistigen Gewinn. Der innere Gesichtskreis erweitert sich um vieles. Occidental gibt nichts Totes; es gibt nur Lebendiges und Kraftvolles; Occidental enthält ungeahnte Bildungs- und Zukunftswerte.</p>
+<p>Der Beweis dafür liegt im Occidental selbst.</p>
+<h2 id="occidental-tage-in-bernau"><a class="header" href="#occidental-tage-in-bernau">Occidental-Tage in Bernau</a></h2>
+<p>Zum zweiten Male seit seinem Bestehen rief der Deutsche Occidental-Bund seine Mitglieder und Freunde zu einer Tagung zusammen. Die erste Tagung war am 8. und 9. Oktober 1932 in Leipzig, die zweite am 3./4. Juni 1933 (Pfingsten). Das freundliche und altertümliche Hussitenstädtchen Bernau, der Sitz unseres Bundes, bewillkommnete die Teilnehmer der Tagung mit dem prächtigsten Pfingstwetter. Dank der musterhaften Vorsorge unseres Gesinnungsfreundes und Administrators Willy Mildebrath entbehrten die Gäste keiner Bequemlichkeit.</p>
+<p>Die Tagung begann am Sonnabend, dem 3. Juni 1933, abends ½ 8 Uhr mit einer Begrüssungsansprache des Administrators Willy Mildebrath. Er wies im Verlaufe seiner einleitenden Worte darauf hin, daß der Deutsche Occidental-Bund in der verhältnismässig kurzen Zeit seines Bestehens wertvolle Arbeit im Dienste der Weltspracheidee geleistet habe und daß es gelungen sei, alle deutschen Occidentalisten und fortschrittlichen Freunde der Weltsprache in einem festgefügten Organisationskörper zu vereinigen. Er gedachte dabei mit warmen Worten der tätigen Mithilfe namhafter deutscher Weltsprachefreunde und auch des im August 1932 verstorbenen Coidealisten und Weltspracheveteranen Karp Wallon (Dresden), der schon im Sommer 1930 begonnen hatte, die ersten Vorarbeiten für die Gründung einer deutschen Occidental-Organisation zu leisten. Ohne Übertreibung kann man sagen, daß Occidental nicht nur in der gesamten abendländischen Kulturwelt, sondern ganz besonders auch in Deutschland im Vormarsch begriffen ist.</p>
+<p>Anschliessend sprach Gesinnungsfrd. M. A. Fritzsche (Leipzig) über die erfolgreiche Arbeit des Occidental-Clubs Leipzig und über unsere Stellungnahme zum Esperantismus. Er betonte, daß wir Occidentalfreunde nicht Gegner der Esperantisten, sondern nur des Esperanto seien. Unbeschadet der ehrenvollen Verdienste Dr. Samenhofs und seiner Anhänger um die Förderung unseres gemeinsamen Ideals müsse man doch bekennen, daß die sich im Esperanto verkörpernde rationalistisch-schematische Denkweise endgültig überwunden sei und daß die Sprache Samenhofs nun nach Erfüllung ihrer historischen Aufgabe abtreten müsse. Sie werde nun abgelöst durch Occidental, die zeitgemässe und natürliche Weltverkehrssprache. Die ganze Entwicklung der Weltspracheidee sei einem Staffettenlauf zu vergleichen, in dem das Occidental die letzte und siegreiche Staffette bekomme. Mit unseren idistischen, deutschen Gesinnungsfreunden verbindet uns das gemeinsame Streben, unser Ideal seiner raschen Verwirklichung entgegenzuführen. Unser Wunsch ist es, nutzlosen Systemfanatismus zu vermeiden und mit <em>allen</em> fortschrittlichen Freunden der Weltsprache, gleich welches Systems, eine gemeinsame Basis des verständnisvollen Zusammenarbeitens zu finden.</p>
+<p>Gesinnungsfreund J. Ponnier (Berlin), gab wertvolle Aufschlüsse über das Wachsen der Berliner Occidental-Bewegung. Die bis in letzte Zeit herrschende, allgemeine Zurückhaltung in Fragen des geistigen Lebens stellte unsere Berliner Freunde vor schwierige Aufgaben bei der Werbetätigkeit.</p>
+<p>Über die Werbetätigkeit des Bundes sprach Gesinnungsfreund E. K. Neumann (Dresden). Er betonte, daß wir vor allem auf die persönliche Werbetätigkeit des einzelnen Occidentalisten angewiesen sind und forderte hier nach wie vor unermüdliche Arbeit im Interesse des Occidental. Alle Adressen von Interessenten und neugewonnenen Anhängern müssen der Administration mitgeteilt werden. Die vom Bunde herausgegebenen Werbeschriften, besonders „Der erzieherische Wert des Occidental“ und „Occidental marschiert“ können von der Geschäftsstelle bezogen werden. Da die bescheidenen Mittel des Bundes bei aller Sparsamkeit nicht ausreichen, um eine Propaganda in großem Umfange einzuleiten und durchzuhalten, so müssen wir versuchen, mit geringstem Aufwand eine möglichst gute Wirkung zu erzielen. Der Weltspracheverein „Fortschritt“ in Dresden befindet sich in einem stetigen Aufstieg, so daß für die Zukunft gute Erfolge zu erwarten sind.</p>
+<p>Gesinnungsfreund Dr. Wormser übermittelte die herzlichsten Wünsche und Grüße der Ortsgruppe Frankfurt am Main schriftlich und sprach die besten Hoffnungen aus. Auch von anderen Gesinnungsfreunden waren Begrüßungsschreiben eingegangen. Die Beratungen über die zukünftige Arbeit des Bundes sind mit Erfolg zu Ende geführt worden. Es wurde beschlossen, die nächste Bundestagung in Dresden stattfinden zu lassen.</p>
+<p>Der Nachmittag des Pfingstsonntags führte die Teilnehmer der Tagung in die landschaftlich schöne Umgebung Bernaus. Nach der heißen Arbeit für Occidental wirkte die schattige Kühle des Waldes doppelt erfrischend. An den reizvollen Ufern des Hellsees entlang und durch den märkischen Kiefernwald ging es nach Biesenthal, wo gemütliche Kaffeepause gemacht wurde, bevor man den Heimweg nach Bernau antrat.</p>
+<p>Alle Gesinnungsfreunde nahmen beim Abschied das Bewusstsein mit sich, die deutsche Occidental-Bewegung wieder ein gutes Stück vorwärtsgebracht zu haben.</p>
+<hr />
+<p><strong>Vergessen Sie nicht,</strong> verehrter Gesinnungsfreund, daß auch so eine ideale Bewegung wie die für unser Occidental nicht ohne Geld arbeiten und vorwärtskommen kann. Die German Occidental-Federation bittet alle Coidealisten, denen es möglich ist, ihr Scherflein beizutragen. Spenden für unsere Bundesarbeit wolle man auf unser Postscheckkonto Berlin 696 76 unter Angabe des Zweckes einzahlen. Quittung erfolgt im G. O.</p>
+<p>N.</p>
+<p><strong>Occidental <em>vive e va victer</em>!</strong></p>
+<hr />
+<p>Verantwortlich: E. K. Neumann, Dresden 6, Görlitzer Str. 35.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="german-occidentalist-6"><a class="header" href="#german-occidentalist-6">German Occidentalist</a></h1>
+<p><strong>№  8. 1933.</strong></p>
+<p>Mitteilungsblatt des Deutschen Occidental-Bundes, Berlin-Bernau. – August.</p>
+<hr />
+<h2 id="occidental-und-die-deutschen-lehnwörter"><a class="header" href="#occidental-und-die-deutschen-lehnwörter">Occidental und die deutschen Lehnwörter.</a></h2>
+<p><em>Von Walter Karch.</em></p>
+<p>Man behauptet gern, Occidental sei zu romanisch, und drückt das sogar so aus: Wenn 1918 die siegreiche Entente eine künstliche Weltsprache hätte erfinden lassen, so würde diese dem Occidental vollkommen gleichen. Dabei vergisst man aber, dass die Weltsprache des Abendlandes der Sprache der alten Römer sehr ähnlich sein muss, weil Europas Kultur lateinische Grundlage hat. Selbst unsere deutsche Sprache war im Mittelalter nahe daran, romanisch zu werden. Das zeigen uns die vielen lateinischen Lehnwörter.</p>
+<p>Aber auch nach der Reinigung des Deutschen von Fremdwörtern haben sich noch viele romanische (italienische, französische, spanische) Lehnwörter bei uns eingebürgert (Kasse, Tunnel, Soße, Koller [= colliere] Kordel, Trasse, Tralje). Alles das nun kann uns die Weltsprache (Occidental) als verwandt und vertraut erscheinen lassen. Ausserdem hat ja Occidental 400 – 500 deutsche, niederdeutsche (litt, pram) bezw. allgemein germanische Wörter (blanc, nord, sud, bloc, bord, brun, frisc, hall, glass, sup, sala, lassar...). Wer sich ein wenig in vergleichende Sprachwissenschaft einführen lassen will, der möge Occidental lernen. Es ersetzt auch auf diesem Gebiet die Kenntnis des Latein, weil es oft die ungefähr lateinische Form bewahrt hat (tegul, nocte, sturn, tenui, genu), so dass sich alle Lautwandelgesetze zeigen lassen. Das gilt auch für den Vergleich mit modernen, romanischen Sprachen, die ja bekannter sind als Latein (tegul – t<em>uil</em>e, <em>s</em>turn – <em>é</em>t<em>ou</em>rneau), (tegul – tile, nocte – night. Ja sogar alt-arische Formen treten mitunter auf (sestra altslawisch, altbulgarisch), ebenso althochdeutsche (<em>sv</em>in, ta<em>sc</em>a). Allmählich wird man ein gewisses Gefühl für Wortverwandtschaft gewinnen, und das hat seinen eigenen Reiz. Es ist erstaunlich, wieviel Hunderte scheinbar unzusammenhängender Wörter aus gleicher arischer Wurzel stammen. Man kann so vielen Occidental-Wörtern unverwandte deutsche Wörter zuordnen, die allerdings heute eine völlig andere Bedeutung erlangt haben: hor = Uhr, plum = Flaum, cage = Koje, limac = Schleim, tuchar = tuscheln, village = Weiler, arc = Erker, lavar = laben, offrir = opfern, querc = Föhre, popul = Pöbel. Man wird aber auch im Occidental deutsche Wörter meist in der Form finden, wie sie in andere Sprachen als Lehnwörter übergingen (hareng <em>frz.</em>, plug, rum, scruv <em>schwedisch</em>, spruzzar <em>italienisch</em>). Ein solches Studium zeigt vor allem, daß die Umgangssprache des Occidental ebenso stark sich an Deutsch und Englisch anlehnt. Durch die Technik kann der Einfluss dieser beiden germanischen Sprachen sogar noch zunehmen.</p>
+<p>Solche Durchsetzung des Romanischen mit germanischem Wortgut geschieht ja seit langem schon täglich. Wenn umgekehrt die Lehnwortbildung vom Occidental her wieder in die Nationalsprachen aufleben würde, wäre das kein Schaden. Die Weltsprache ist für Europas Völker die zweite Natur, aber nichts Fremdes! Wir können und müssen die Weltsprache jetzt einführen, solange noch das heutige Geschlecht im Hinblick auf die Fremdwörter zweisprachig ist! Das ist nötig, ehe die Völker sich vom internationalen Sprachgut emanzipieren durch Schaffung eigener Vokabeln, z. B. seitens der Ungarn, Tschechen, Polen, Serben in Anlehnung an unsere Art der Verdeutschung.</p>
+<h2 id="als-subventionen"><a class="header" href="#als-subventionen">Als Subventionen</a></h2>
+<p>für die Arbeit der German Occidental-Federationen sind folgende Beträge eingegangen:</p>
+<ul>
+<li>M. A. Fritzsche, Leipzig 8.– M.,</li>
+<li>F. Lagnel, Chapelle 3.– M.,</li>
+<li>W. Mildebrath, Berlin 8.– M.,</li>
+<li>K. Neumann, Dresden 8.– M.,</li>
+<li>J. Ponnier, Berlin 4.– M.,</li>
+<li>Bis jetzt <strong>31.– M</strong>.</li>
+</ul>
+<p>Den Spendern herzlichsten Dank!</p>
+<h2 id="rezension"><a class="header" href="#rezension">Rezension</a></h2>
+<p>Das <em>Gemma-Galgani-Büchlein</em> schildert das Leben, die Ekstasen und Andachtsübungen der stigmatisierten Jungfrau von Lucca in Italien. Es ist verfasst von unserem Coidealisten Pater Pelegrinus Hoffmann O.S.B., Abtei Schweiklberg, und mit einem Vorwort von Mons. Giuseppe Bergamini, Prior der Kollegialkirche S. Paolino, versehen, enthält 264 St. und das Bild der sel. Gemma-Galgani. Es sei allen Kath. empfohlen!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="german-occidentalist-7"><a class="header" href="#german-occidentalist-7">German Occidentalist</a></h1>
+<p><strong>№  9. 1933.</strong></p>
+<p>Mitteilungsblatt des Deutschen Occidental-Bundes, Berlin-Bernau.</p>
+<hr />
+<h2 id="occidental-im-neuen-deutschland"><a class="header" href="#occidental-im-neuen-deutschland">Occidental im neuen Deutschland</a></h2>
+<p>Das neue Deutschland schreitet zu einer Generalbereinigung aller politischen, staatlichen und volklichen Angelegenheiten. Je mehr es das tut, desto mehr können wir es begrüssen. Es ist selbstverständlich, dass der neue Geist auch eindringt in alles Kulturelle. Nur was sich als <em>volklich</em> gut und notwendig vor ihm ausweisen kann, bleibt bestehen.</p>
+<p>Nicht zu leugnen ist, dass sich daraus eine etwas veränderte Stellung zu dem <em>Hilfssprachenproblem</em> als bisher ergibt. Von seinem internationalen Zweck, als dem Träger internationaler Ideen, wird man sich mehr auf den nationalen Wert besinnen. – Die nationale Sprache wird vordringlich nicht nur auf ihren eigenen Gehalt hin auszukaufen sein, kulturell wie literarisch und sprachlich; sondern sie wird auch ihren Gebrauch nachdrücklich nach aussen hin, so dem Ausland gegenüber, betonen und bevorzugen.</p>
+<p>Was ich da dartue, trifft am Hilfssprachenproblem nun endlich das, was daran künstlich aufgezogen, auf Stelzen einherhinkend, ein mattes Dasein führt. Manfred <em>Kyber</em> hat in diesem Sinne ja Esperanto schon <em>vor</em> dem 30. Januar 1933 verurteilt!</p>
+<p>In unseren Zusammenhang gehört die Tatsache, dass „der Führer“, entgegen aller Engstirnigkeit! unser Vaterland wie kein anderer geradewegs in die Mitte von Europa hineinverankert hat. Was die Wissenschaft der Geopolitik seit einem guten Jahrzehnt in Deutschland gelehrt hat, über den deutschen Lebensraum sowie über die mannigfachen Überschneidungen, kultureller und auch volklicher Art, die darüber hingehen, das ist in unseren Tagen zu einer lebendigen Gestalt geworden, die gebührende Beachtung erheischt.</p>
+<p>Auf das Kulturell-Sprachliche hingesehen, heisst das aber nichts anderes, als die Lage so betrachten, wie es, speziell im rein Sprachlichen, der Artikel von Sr. Prof. <em>Meillet</em> tut in der Cosmoglotta Juli-August d. J. „Li latin e li modern lingues“. Auf diesen dadurch äusserst wertvollen Aufsatz verweise ich ausdrücklich!</p>
+<p><em>Occidental</em> treiben, heisst nach wie vor nichts anderes tun, als aus den Brunnenstuben schöpfen, aus denen unser heutiges europäisches Leben zu einem grössten Teile allen Europäern gemeinsam entquollen ist, und das nicht unwesentlich in kulturell-sprachlicher Beziehung auch das typisch Germanische beeindruckt und geformt hat.</p>
+<p>Diese Tatsachen erhellen erneut die ganz besondere Stellung, die Occidental als <em>natürliches</em> Sprachengebilde im Hilfssprachenproblem einnimmt und erläutern ebenso offensichtlich, warum es entgegen Espo und Ido usw. seine lebendige Stellung <em>aus sich selbst heraus</em> schafft und ungezwungen nimmt.</p>
+<p>Das sind im wesentlichen, es sei zugestanden, zunächst einmal lediglich formal gesehen, die Gesichtspunkte, die unsere unentwegte Treue zu dem prächtigen OCCIDENTAL auch im neuen Deutschland rechtfertigen.</p>
+<p>Mögen sie uns zu eifriger Arbeit sowie zu erfolgreichem Bemühen anspornen!</p>
+<p>Joh. Quensel.</p>
+<hr />
+<p><em>Subvention por G.O.F.</em></p>
+<p>5,– M. de <em>Joh. Quensel</em>, Günthersleben.</p>
+<p>Cordial mersía!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="der-deutsche-occidentalist"><a class="header" href="#der-deutsche-occidentalist">Der deutsche Occidentalist</a></h1>
+<p>2. Jahrgang №  1 (13). 15. Januar 1934.</p>
+<p>Mitteilungsblatt des Deutschen Occidental-Sprachbundes, Günthersleben.</p>
+<hr />
+<h2 id="der-weg-der-weltsprache"><a class="header" href="#der-weg-der-weltsprache">Der Weg der Weltsprache</a></h2>
+<p>Mancher läßt sich von der Erlernung der bewußt geschaffenen Weltsprache nur dadurch abhalten, daß er glaubt, ihre Form sei bis zur amtlichen Einführung noch manchem Wandel unterworfen. Diese Vorsicht ist unbegründet, denn die Weltsprache hat sich in den letzten 50 Jahren zu ziemlicher Vollkommenheit entwickelt. Sprachpsychologie und vergleichende Sprachwissenschaft haben dazu geholfen. Jeder Eingeweihte weiß, daß nur das System sich durchsetzen wird, das natürlich genug und doch auch autonom ist. Eine solche <em>natürliche Plansprache</em> kommt aber zugleich den ewigen Zweiflern entgegen, die das Erlernen einiger nationaler Weltsprachen für wertvoller halten. Die Plansprache ist das gehaltsreichste und kürzeste Vorstudium zu allen modernen Fremdsprachen. Denkbildender Wert kommt diesen ja gar nicht zu, wenn man an die vielen Unregelmäßigkeiten und an die rein zufällige Verschiedenheit des grammatischen Systems (Satzkonstruktion!) denkt. Jedes Eindringen in fremde Sprache bringt uns nur die deutsche Wesensart beim Vergleich deutlich zum Bewußtsein. Freilich hat die Wissenschaft vielfache Gemeinsamkeiten der europäischen Hauptsprachen aufgewiesen, die ja alle mit dem Latein in Verbindung stehen. Auch unser deutsches Sprachleben erhielt von dorther Zuflüsse.</p>
+<p>Harmonische Form dieser Gemeinsamkeiten ist Occidental. Vielsprachler lernen sie ebenso rasch und sicher wie Einsprachler, weil sie bei aller <em>Natürlichkeit</em> (der Wortstämme, Schreibweise, Wortbildung, Stilgebung) einfach, klar und <em>regelmäßig</em> ist, kurzum <em>eigenes Gesicht</em> hat. Nie muß man im Occid. ein Wort lernen, das mit einer international oder sachlich falschen Vor- oder Nachsilbe gebildet ist. Dieses Durchschauen der internationalen Wortbilder hat auch die Erlernung der romanischen Nationalsprachen und des Latein erleichtert mittels der Gesetze, die der Schöpfer des Occidental als Werkzeug für den Aufbau der Weltsprache erkannte. Auch im neuen Deutschland wird die deutsche Fremdwörtersprache nicht ganz verschwinden; sie haftet ja auch der wissenschaftlichen Literatur der Nachkriegszeit noch an. Hier nun wird Occidental der wahren Volksbildung dienen können, indem es diese übernationalen, <em>europäischen</em> Wörter erklärt.</p>
+<p>Die Formenlehre der Weltsprache weicht stärker von den nationalsprachlichen Vorbildern ab und beschränkt sich auf die nötigsten Ausdrucksmittel einer <em>internationalen Grammatik</em>, ohne durchaus logisch sein zu wollen. Unsere moderne Zeit hat ja andere Möglichkeiten, die durchs Studium des klassischen Latein angestrebte Denkschulung zu ersetzen, z. B. durch Technik, Geopolitik, Rassenkunde, Urzeitforschung, Religionsforschung usw.</p>
+<p>So sollte die Weltsprache in der Übergangszeit für höhere Schulen zur <em>zweiten Fremdsprache</em> statt des Französischen, für Volksschulen zur ersten Fremdsprache werden. Die Rolle des Griechischen, d. h. das System seiner in der wissenschaftlichen Nomenklatur (Anatomie, Arzneikunde, Chemie) verwendeten Wortstämme und Ableitsilben kann der Unterricht in Occidental mühelos als Anhangskapitel übernehmen. Schon heute aber ist Occidental das <em>Volkslatein</em> und, wenn man will, zugleich das <em>leicht sprechbar</em> und <em>wohlklingend hörbar</em> gemachte <em>Ideal-Englisch</em>.</p>
+<p>Walter Karch, Leipzig.</p>
+<hr />
+<p>Als Manuskript gedruckt: Herausgeber: Deutscher Occidental-Sprachbund, Bundesführer Joh. Quensel, Günthersleben über Gotha.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="der-deutsche-occidentalist-1"><a class="header" href="#der-deutsche-occidentalist-1">Der deutsche Occidentalist</a></h1>
+<p>2. Jahrgang №  2 (14). 15. März 1934.</p>
+<p>Mitteilungsblatt des Deutschen Occidental-Sprachbundes (German Occidental-Federation).</p>
+<hr />
+<h2 id="mitteilungen-des-deutschen-occidental-sprachbundes"><a class="header" href="#mitteilungen-des-deutschen-occidental-sprachbundes">Mitteilungen des Deutschen Occidental-Sprachbundes</a></h2>
+<h3 id="der-freundeskreis"><a class="header" href="#der-freundeskreis">Der Freundeskreis.</a></h3>
+<p>Den Grundstamm der deutschen Occidental-Bewegung bildet der Deutsche Occidental-Sprachbund (German Occidental-Federation), dessen Mitglieder das fortgesetzte und ernstliche Betreiben von Occidental als ihre freudig zu erfüllende Aufgabe betrachten.</p>
+<p>Daneben soll zukünftig der Freundeskreis entstehen. Er umschließt alle diejenigen, die sich den Mitgliedern des Deutschen Occidental-Sprachbundes gegenüber bereiterklären, von diesen fortlaufend Occidental-Literatur anzunehmen, Occidental zu lernen und ferner vielleicht (das sei aber nicht das Ausschlaggebende!) sogar bereit sind, fortlaufend od. dann und wann dem Bunde geldliche Unterstützung darzubieten. Je größer der Freundeskreis ist, desto schneller und gewisser wird Occ. bekannt und erkannt. Die Mitglieder des Freundeskreises sind mir zu melden.</p>
+<p>Jeder Coidealist sollte es als seine Pflicht ansehen, im Laufe des Jahres 1934 durch seine eigene persönliche Werbetüchtigkeit je einen Volksgenossen neu zum Bunde und ebenso mindestens zum Freundeskr. zu werben.</p>
+<p>Joh. Quensel, Bundesführer.</p>
+<h3 id="bundessatzung"><a class="header" href="#bundessatzung">Bundessatzung.</a></h3>
+<p>1. Der Deutsche Occidental-Sprachbund (German Occidental-Federation) besteht aus einem engeren Kreis von Angehörigen und aus einem weiteren von Anhängern. Den engern Kreis bilden die Mitglieder (Coidealisten). Mitarbeit im weiteren Sinne wird durch den Freundeskreis des Bundes gewährt.</p>
+<p>2a. Mitglied des Bundes kann jeder deutsche Volksgenosse werden, der den Nachweis arischer Abstammung zu versichern vermag.</p>
+<p>2b. Wer zur Mitarbeit bereit ist, ohne die Mitgliedschaft erwerben zu wollen oder zu können (2a), kann sich dem Freundeskreis anschließen.</p>
+<p>[In der Deutschen Juristen-Zeitung hat d. Herr Reichsinnenminister Dr. Frick erneut darauf hingewiesen, daß die deutsche Rassengesetzgebung KEIN Werturteil über andere Rassen darstellen soll. Die Anwendung der Ariergesetzgebung soll nicht ins Uferlose gehen.]</p>
+<p>3. Im Deutschen Occidental-Sprachbund herrscht das Führerprinzip. An der Spitze des Bundes steht der Bundesführer (president); er ernennt seinen Stellvertreter (vice-pres.).</p>
+<p>4. Die Verwaltungsarbeiten liegen in der Hand des Bundeswalters (administrator). Er kann zum Zwecke seiner Entlastung und im Sinne der Arbeitsteilung je einen Schriftführer (secretario) und Kassenwart benennen; ihre Bestätigung bleibt dem Bundesführer vorbehalten.</p>
+<p>5. Die Gesamtwerbeleitung liegt in der Hand des Werbewarts, der vom Bundesführer ernannt wird und ihm untersteht.</p>
+<p>6. Bei sparsamster und wirtschaftlichster Kassenführung wird der Bundesbeitrag in Übereinstimmung mit dem Ausgaben-Muß im Verein mit dem Bundeswalter und dem Werbewart vom Bundesführer festgesetzt. Ein Drittel der Beiträge verbleibt den Gruppen, bei denen die zahlenden Mitglieder sind. Dem Bunde zufließende Spenden werden nur im Sinne seiner Aufgaben verwandt.</p>
+<p>7. Die Zugehörigkeit eines jeden Mitgliedes zum Bunde wird nur durch die von ihm geleistete Arbeit für die Ziele unseres Bundes bewertet.</p>
+<p>8. Die Mitglieder des Freundeskreises betätigen sich im Rahmen des ihnen für den Bund zu leistenden Möglichen. Zu festen Beitragszahlungen werden sie nicht verpflichtet.</p>
+<hr />
+<p>Deutscher Occidental-Sprachbund, Günthersleben über Gotha.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="der-deutsche-occidentalist-2"><a class="header" href="#der-deutsche-occidentalist-2">Der deutsche Occidentalist</a></h1>
+<p>2. Jahrgang №  3 (15). 15. Mai 1934.</p>
+<p>Mitteilungsblatt des Deutschen Occidental-Sprachbundes, Günthersleben Th.</p>
+<hr />
+<h2 id="die-internationale-innere-sprachform"><a class="header" href="#die-internationale-innere-sprachform">Die internationale innere Sprachform</a></h2>
+<p><em>Von W. Karch, Leipzig.</em></p>
+<p>Die enge Verwandtschaft des Occidental mit den europäischen Weltsprachen zeigt sich nicht nur im Wort- und Formschatz, sondern auch in der ganzen inneren Struktur. Wie keine der bisherigen Plansprachen bewahrt Occidental die gemeinsame Struktur der lebenden arischen Sprachen, und an dieser Gemeinsamkeit hat auch das Deutsche Anteil.</p>
+<p>Oftmals liegen auch dort, wo rein äußerlich keine lexikalische Uebereinstimmung besteht, doch bestimmte gleiche Gedankengänge zugrunde. Dann erscheint etwa ein deutscher Ausdruck als die wörtliche Uebersetzung eines fremdsprachlichen und umgekehrt (Antipode = Gegenfüßler, Bankerott = Bankbruch, lat.: locus communis, engl.: common place = Gemeinplatz, engl.: hotspur = Heißsporn). Das Denken der Völker ist trotz Abweichung bezüglich lautlicher Erscheinungsform der Wörter doch tatsächlich wesentlich übereinstimmend. Man spricht dann von gleicher innerer Sprachform.</p>
+<p>Da die europäischen Hauptsprachen (A, F, G, H, I) bei Veröffentlichungen und Tagungen vielfach nebeneinander verwendet werden, gleichen sie sich innerlich immer mehr an. Vermittler solcher begrifflichen Angleichung sind die Vielsprachler.</p>
+<p>Als häufigster Typ solcher „<em>Begriffsformen</em>“ tritt uns die <em>Wortverbindung</em> entgegen, d. h. die einwortige Verbindung von Wortstämmen bezw. die zweigliedrige Bindestrich-Form. (Neujahr, kopfüber, himmelblau, wohlwollend.) Vorbild hierfür waren die <em>germanischen</em> Sprachen. Im Romanischen ist sie seltener, aber im Occ. hat sie mehr und mehr Heimatrecht erlangt, sodaß autonome Parallel-Bildungen zulässig sind. Man vergleiche etwa: <em>sub</em>marin = <em>unter</em>see<em>isch</em>, pos-midí (frz. après-midi), surdi-mut = taubstumm (frz. sourd-muet), mort-nascet = totgeboren (frz. mort-né), verme<em>molat</em> = wurmstichig (frz. vermoulu), vive-durant = lebenslänglich, rubicaude = Rotschwänzchen (frz. rouge-queue), <em>ne</em><strong>m</strong>oblivia = Vergißmeinnicht (frz. pensez-à-moi; vgl. Engl.), fanull<em>on</em>e = Nichtstuer, parti<em>prender</em>, pos-deman = übermorgen, <em>pre</em>guerr<em>al</em> = vor dem Kriege bestehend, <em>sub</em>cut<em>an</em> = unter der Haut befindlich, dextri<em>man</em> = rechtshändig, <em>du</em>seman<em>al</em> = zweiwöchent<em>lich</em>, <em>sub</em>terr<em>an</em>, bon-esser = Wohlstand (frz. bien-être), <em>bon</em>vol<em>ent</em> = w<em>oh</em>lwoll<em>end</em> (frz. bénévole), bonfact = Wohltat (frz. bienfait), porte-franc = postfrei, bass-terren = Tiefland usw.</p>
+<p>Die Stellung der Teilglieder entspricht dem Deutschen: manu-besa = Handkuß (frz. baise-main), contrabass (frz. basse-contre). Aus dem Romanischen hingegen stammt die brauchbare <em>imperativische</em> Begriffsform: para-luce = Lampenschirm, para-pluvia = Regenschirm, calidá-pede = Fußwärmer, frz. chauffe-pied. Es entstehen hierdurch Begriffe von feststehender, soz. <em>patentierter</em> Bedeutung, die immerhin noch durchsichtig genug sind, also durchaus nicht rätselhaft. Die Bildung neuer Worte und Begriffe wird somit erleichtert und außerdem werden innere <em>Merkhilfen</em> für das Erlernen des Occ. geschaffen, denn es ist durchaus denkbar, daß von der Weltsprache her dieses Bilden von Begriffsformen in die Nationalsprachen vordringt.</p>
+<p>Im Occidental ist solche Wortschöpfung dort gut angebracht, wo kein gemeinsamer Ausdruck für einen Begriff zu finden ist (aer-nave = Luftschiff = Zeppelin; ferrovia (it.); paper-cornette (frz.) = Tüte; (vgl. Tute = Blashorn); oder wo eine internationale Vokabel hinsichtlich ihrer Bedeutung in einer der Hauptsprachen wesentlich abweicht. Im Engl. tritt dieser Fall oft ein (vgl. may-flower = Weißdorn): statt maiflor also besser mai-clochette = Maiglöckchen. Übrigens ist unter Umständen ein präpositionaler Ausdruck vorzuziehen (plan <em>de</em> viagie, erra <em>de</em> calcul, colpe <em>de</em> ped, successor <em>al</em> tron).</p>
+<p>Auch die von deutscher Anschaulichmachung, Gemütstiefe und Heiterkeit zeugende <em>Begriffsübertragung</em> wird im Occid. eine Rolle spielen, besonders in der technischen Fachsprache. So reden wir bei Maschinen und Apparaten von Zunge, Hals, Fuß, Bauch, Bart, Strom, Schirm, Hahn, Zähnen usw. Gerade die Alltagssprache wird oft auf <em>innere Begriffsformen</em> zukommen müssen, und hier gebührt unserer Muttersprache ein großer Anteil an brauchbaren Vorbildern.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="der-deutsche-occidentalist-3"><a class="header" href="#der-deutsche-occidentalist-3">Der deutsche Occidentalist</a></h1>
+<p>2. Jahrgang №  4 (16). 15. Juni 1934.</p>
+<p>Mitteilungsblatt des Deutschen Occidental-Sprachbundes (German Occidental-Federation).</p>
+<hr />
+<h2 id="Übersetzungsschwierigkeiten"><a class="header" href="#Übersetzungsschwierigkeiten">Übersetzungsschwierigkeiten</a></h2>
+<p>Jeder, der zuerst versucht, aus der eigenen in eine fremde Sprache zu übersetzen, stößt dabei auf Schwierigkeiten. Es ist bekanntlich sehr viel leichter, <em>aus</em> einer anderen Sprache in die eigene zu übersetzen. Manche Ausdrücke der natürlichen Sprachen lassen sich überhaupt nicht übersetzen, so vor allem die Wortspiele, aber auch manches andere. Ich habe oft gefunden, daß man einen Ausdruck, dessen Übersetzung Schwierigkeiten bereitet, einfach <em>weglassen</em> kann, natürlich nur dann, wenn dadurch der Sinn nicht entstellt wird. Das gilt vor allem von Ausdrücken, die reine Modekrankheit sind, wie z. B. „restlos“ und „als solcher“, die in den letzten Jahren unsere deutsche Sprache verunzierten und auch in jedem deutschen Text getrost gestrichen werden können, ohne daß dadurch der Sinn im geringsten verändert wird. Eine scheußliche Modekrankheit ist auch die Redensart „im Bilde sein“, oder, noch greulicher: „jemanden ins Bild setzen, was eine ganz verkorkste Metapher ist; statt dessen sagt man: Bescheid wissen, oder: unterrichtet sein, oder: sich über etwas im klaren sein, oder einfach: etwas wissen oder kennen; ins Occidental übersetzt: esser informat, saver, conosser. Leeres Stroh ist auch das „letzten Endes“, das glücklicherweise schon etwas aus der Mode gekommen ist; es zu übersetzen, kann man sich ruhig sparen. Meist überflüssig ist auch das Wort „bekanntlich“, mit dem der Schreiber sich nur gegen den Vorwurf schützen will, daß er eine Binsenwahrheit auftische.</p>
+<p>Dann gibt es noch mancherlei Wörter, die zwar gut deutsch sind, aber doch nur den Satz oder Satzteil etwas färben oder betonen sollen, oft auch nur etwas ausfüllen, z. B. „überhaupt“, „nämlich“, „ohnehin“, „sowieso“. Sie lassen sich wohl manchmal durch so farblose Partikeln wie „ya“ ins Occ. übersetzen; in manchen Fällen wird man sie aber ebenfalls getrost weglassen können. Man muß sich nur eben („eben“, das ist auch so ein Wort!!) den <em>Sinn</em> des Satzes vergegenwärtigen: das ist die erste Voraussetzung einer guten Übersetzung.</p>
+<p>In vielen Fällen läßt uns unser braver Gär im Stich (gepriesen sei seine fleissige selbstlose Arbeit!). Da gibt es aber Auswege; man sieht in einem englischen und französischen Wörterbuch nach, womöglich auch noch in einem italienischen und spanischen; dann hat man den richtigen Ausdruck meistens leicht und schnell gefunden. Noch ein anderes Rezept: Man sucht für den deutschen Ausdruck einen anderen mit möglichst engverwandtem Sinn.</p>
+<p>Die allergrößten Schwierigkeiten bieten freilich <em>technische</em> Ausdrücke, die noch nicht von unserer Akademie festgelegt sind; soweit sie nicht in den größeren Sprachen übereinstimmen (die kleineren Formabweichungen sind für das Occidental meist belanglos), empfiehlt es sich, die deutsche, englische und französische Übersetzung in einer Klammer hinzuzufügen.</p>
+<p>Dr. Peipers, Köln.</p>
+<h3 id="presseschau"><a class="header" href="#presseschau">Presseschau.</a></h3>
+<ul>
+<li>VOGTLÄNDISCHER ANZEIGER UND TAGEBLATT vom 2. März 1934, enthält einen kurzen Aufsatz: „Was ist Occidental?“, eingerückt durch Coidealist Weller, Plauen i. V., Neuendorfer Str. 55.</li>
+<li>COSMOGLOTTA, ANNU XIII, №  92, 93, 94, 95, 96.</li>
+<li>Ric. Berger: L'OCCIDENTAL EN CINQ LEÇONS. Chapelle 1934. 16 S. 0.40 Schw. Fr.</li>
+</ul>
+<h3 id="spenden"><a class="header" href="#spenden">Spenden:</a></h3>
+<p>Sr. Willy Mildebrath, Bernau: 14.– M.
+Sr. Joh. Quensel, Günthersleben: 11,50 M.</p>
+<p>Herzlichen Dank!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="der-deutsche-occidentalist-4"><a class="header" href="#der-deutsche-occidentalist-4">Der deutsche Occidentalist</a></h1>
+<p>2. Jahrgang №  5 (17). 1. Sept. 1934.</p>
+<p>Mitteilungsblatt des Deutschen Occidental-Bundes (German Occidental-Federation), Günthersleben über Gotha.</p>
+<hr />
+<h2 id="manifestation"><a class="header" href="#manifestation">Manifestation</a></h2>
+<p>Car coidealistes,</p>
+<p>Vu es instructet ja antey pri li nov organisation del German Occidental-Federation.</p>
+<p>Justmen <em>Occidental</em> es destinat luder su rol extraordinarimen instructiv e cultural concernent li lingual erudition del larg masse de nor compatriotes, adminim qui have li serios desir aclarar se pri li rich vocabularium de paroles e notiones extran in nor lingue matrin (quam in omni lingues del Occident!).</p>
+<p>In tal sense noi apercepte li mission de <em>Occidental</em> in li triesim reyatu; do un affere sam national quam social!</p>
+<p>Noi es fier, que <em>Occidental</em> PER SE SELF da nos un tal mandat. Li <em>German Occidentalist</em> mey preparar ye su parte ja nu li attin’tion de ti bell e serios scop.</p>
+<p><em>PLES COLLABORAR</em>, car coidealistes, per articules scientific, instructiv o distractori, ma <em>scrit in Occidental</em>.</p>
+<p>Misser ti articules a:</p>
+<p>Johannes Quensel,<br />
+(German Occidental-Federation)<br />
+<em>Günthersleben</em> über <em>Gotha</em>.</p>
+<p>(+ O1 +)</p>
+<h2 id="al-memorie-de-wieland-pri-li-maximes-de-traduction"><a class="header" href="#al-memorie-de-wieland-pri-li-maximes-de-traduction">Al memorie de Wieland (Pri li maximes de traduction)</a></h2>
+<p>It existe du maximes de traduction: li un postula, que li autor de un foren nation es transportat ad-che nos, talmen que noi posse considerar le quam li nostri; li altri, in contra, postula de noi, que noi transea ad-che li foreno e acustoma nos ye su status, su maniere de parlar, su particularitás. Li avantages de ambi es sufficentmen conosset a omni erudit homes per modellic exemples. Nor amico, serchant anc ci li medial via, penat se combinar ambi; ma quam hom de sentiment e gust il preferet in dubitabil casus li unesim maxime.</p>
+<p>Nequi forsan ha sentit tam intim quam il, qual complicat affere es un traduction. Quam profundmen il esset convictet, que ne li parol ma li sens es animant! On mey considerar, qualmen il effortia se, in su introductiones, antey far nos imaginar li tempore e conossentar nos li persones, qualmen tande il fa parlar su autor per un maniere ja conosset nos e affini a nostri sensu e orel, e in fine, in notes, ancor prova interpretar e escartar mani detail, quel vell restar obscur, excitar dubites o devenir chocant. Per ti triplic effortie, on vide it tre bon, il ha occupat antey su object, e poy il ya pena-se sincermen far nos capabil accepter su conossentie, porque noi participa anc ye su delicie.</p>
+<p>Quancam il savet pluri lingues, il persistet strictmen ye ti du, per queles es tradit nos maxim pur li valore e li dignitá del antiquitá. Nam benque noi ne vole negar que mani tresor ha esset extraet ex li minieras del altri antiqui literaturas e va esser extraet ancor, on ne va contradir nos si noi asserte que li lingue del Grecos e Romanos ha tradit nos til hodie delicios dones, pri qualitá equivalent al ceteri optimum, pri li form preferabil a omni altris.</p>
+<p>(+ S1 +) GOETHE. Trad. de Karch.</p>
+<hr />
+<p>Noi obliga chascun coidealist, transmisser ti su exemplar del <em>German Occidentalist</em> a un ó, to naturalmen es ancor plu bon! a plur interessentes. Plu letores de chascun exemplar – plu bon do nor success intentet: far conosset <em>OCCIDENTAL</em>!</p>
+<hr />
+<p>Herausgeber: Deutscher Occidental Sprachbund; Joh. Quensel, Günthersleben ü. Gotha, Postsch. Erfurt 259 81.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="der-deutsche-occidentalist-5"><a class="header" href="#der-deutsche-occidentalist-5">Der deutsche Occidentalist</a></h1>
+<p>2. Jahrgang №  6 (18). 15. Sept. 1934.</p>
+<p>Mitteilungsblatt des Deutschen Occidental-Sprachbundes, Günthersleben ü. Gotha.</p>
+<hr />
+<h2 id="national-socialistic"><a class="header" href="#national-socialistic">National-socialistic</a></h2>
+<p>On ha interrogat proquó li Führer Ad. Hitler ha monetat li parol-form ›national-socialistic‹, do un parol extran e ne german. Probabilmen por utilisar ti notion quam nud arm in li combatte in li arena de quel ja havet su autoritá li du frases. Ma nu inspirat li Führer a illi lor ver contenete!</p>
+<p>„Nation“ origina ex li lingue latin. It significa Volk, originalmen Volksstamm. It deriva se del verbum nasci = nascer. Li nation do include omni tis qui es de sam provenientie e origine anc rasse. Li moment socialistic deve esser quasi li ligament del ver solidaritá de omni membres del nation.</p>
+<p>„Social“ have su origine in li parol latin socius = socio, camarad. Justmen li popul german es predestinat comprender secun su rassic particularitá profundissim tal congregation national-socialistic. Ex to deriva se li immens success del idé national-socialistic, de quel DR. GOEBBELS di que it es un affere justmen german, e ne „por export“.</p>
+<p>(+ I1 +)</p>
+<h2 id="kritikaster"><a class="header" href="#kritikaster">„Kritikaster...“</a></h2>
+<p>Quardeci annus ADOLF HITLER <em>combattet</em>. In omni ti annus homes, ya tot parties ne ha mancat, intra e extra de Germania, queles profetizat li non-success, mem li fiasco de un tal interprense, ad saver: formar e organisar ex li amasse de funest disuniones, different opiniones, antagonist gruppes de omni sortes, producter ne minu quam – <em>un popul</em>. Nam it existet adver li Reich, ma ne li popul german. Per li inexpressibilmen penos sacrificies del Führer e li sam devotion de su participantes, nu li grandissim scop de nor historie national sta attin'et.</p>
+<p>Solmen li criticastres ne intellige li granditá del hor e de ti mission benque illi hyperglorifica lor propri intellectu. Ma omni critica deve esser directet vers li dur realitá e ne deve esser fixat in vacu utopies. Tal seniores criticastros mey apprender ex Occidental quo significa ti ominos suffix -astr quel es li lor – „equipat de qualitá inferior“ – sam quam on forma de medico: medicastro etc.</p>
+<p>Seniores criticastros, mey vu converter vos, in fin, reconossent li excellent sententie de Menzel:</p>
+<p>„ERUDITION es un grand clave-pacc, ma quel nequant aperte omni serrures. Solmen li GENIE es li crochette quel es por omnis.“</p>
+<p>Heil Hitler!</p>
+<p>(+ J2 +)</p>
+<hr />
+<p>Deutscher Occidental-Sprachbund (German Occidental-Federation)</p>
+<p>Bundesführer Joh. Quensel, Günthersleben über Gotha.</p>
+<hr />
+<p>Provisorimen ne fix contributiones es postulat, ma noi peti tre cordialmen vor subventiones al POSTSCHECKKONTO ERFURT 259 81 (JOHANNES QUENSEL).</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="der-deutsche-occidentalist-6"><a class="header" href="#der-deutsche-occidentalist-6">Der deutsche Occidentalist</a></h1>
+<p>2. Jahrgang No. 7 (19). 1. Oktober 1934</p>
+<p>Mitteilungsblatt des Deutschen Occidental-Sprachbundes, Günthersleben Th.</p>
+<hr />
+<h2 id="esque-vu-ha-visitat-li-leipziger-messe"><a class="header" href="#esque-vu-ha-visitat-li-leipziger-messe">Esque Vu ha visitat li Leipziger Messe?</a></h2>
+<p>Ta vu havet occasion reciver li cité-plan con un textu polyglott (German, Angles, Frances, Hispan – ma ne ja Occidental!) de ti contenete:</p>
+<p>„Li ferie de Leipzig,</p>
+<p>li centre international por exchanger merces de omni sort du vezes in li annu, frequentat de circa 6–7000 expositores e circa 120 000 compratores. 48 halles e magasines sta al disposition del expositores.</p>
+<p>Ples informar Vos che li honorar-representantes e che li officias del Leipziger Messeamt o che li Leipziger Messeamt self, Leipzig C 1, Markt 4.“</p>
+<p>Quel coidealist successa introducter che li Messeamt li tal ó un simil textu Occ, <em>strax comprensibil por li totalité</em> del expositores e visitatores ex li civilisat munde?</p>
+<p>Qui descovri tal altri possibilitás representant írrefutabilmen li singulari superioritá de Occ. in li <em>servicie por li export de german merces</em>, do por li ‚manivellation‘ del economie national!</p>
+<p>(+ D 2 +)</p>
+<h2 id="manifestation-del-german-occidental-federation"><a class="header" href="#manifestation-del-german-occidental-federation">Manifestation del German Occidental-Federation</a></h2>
+<p>Repetition ex №  5 (17).</p>
+<p>Car coidealistes,</p>
+<p>Vu es instructet ja antey pri li nov organisation del German Occidental-Federation.</p>
+<p>Justmen <em>Occidental</em> es destinat luder su rol extraordinarimen instructiv e cultural concernent li lingual erudition del larg masse de nor compatriotes, adminim qui have li serios desir aclarar se pri li rich vocabularium de paroles e notiones extran in nor lingue matrin (quam in omni lingues del Occident!).</p>
+<p>In tal sense noi apercepte li mission de <em>Occidental</em> in li triesim reyatu; do un affere sam national quam social!</p>
+<p>Noi es fier que <em>Occidental per se self</em> da nos un tal mandat. Li GERMAN OCCIDENTALIST mey preparar ye su parte ja nu li attin’tion de ti bell e serios scop.</p>
+<p>PLES COLLABORAR, car coidealistes, per articules scientific, instructiv o distractori, ma scrit in <em>Occidental</em>.</p>
+<p>Misser ti articules a:</p>
+<p>Johannes Quensel,<br />
+Günthersleben über Gotha.</p>
+<p>(+ O 1,1 +)</p>
+<h2 id="mediation-de-correspondentie"><a class="header" href="#mediation-de-correspondentie">Mediation de correspondentie</a></h2>
+<p>Omnes qui reconosse li supra demonstrat mission national de <em>Occidental</em> por li plu clar e plu profund penetration in lor lingue matrin e per to por li erudition desirat de compatriotes, ti omnes mey contribuer ye lor parte al attin’tion del prescrit scop sam sublim quam important.</p>
+<p>Tal considerationes obliga al organisation de correspondentie occidentalistic inter coidealistes compatriot.</p>
+<p>Nam it es tro natural, ti qui occupa se seriosimen con Occidental deve practicar sempre su save, e to per usa. Repetition es li matre del studies. Li correspondentie da in ultra li joya pri li apprendet e al apprender.</p>
+<p>Noi peti do omni coidealistes del G.O.F. qui possede li necessi conossentie de Occidental explicar se pret al correspondentie. Ples scrir a me e vor nómin va esser citat strax in li nov rubrica de nor revue German Occidentalist: Mediation de correspondentie Occidental.</p>
+<p>Ad avan! Johannes Quensel.</p>
+<p>(+ C 1 + )</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="der-deutsche-occidentalist-7"><a class="header" href="#der-deutsche-occidentalist-7">Der deutsche Occidentalist</a></h1>
+<p>2. Jahrgang №  8 (20). 15. Okt. 1934.</p>
+<p>Mitteilungsblatt des Deutschen Occidental-Sprachbundes (German Occidental-Federation), Günthersleben über Gotha.</p>
+<hr />
+<h2 id="zusammenhänge-zwischen-deutschen-fremdwörtern-und-stammwörtern-des-occidental"><a class="header" href="#zusammenhänge-zwischen-deutschen-fremdwörtern-und-stammwörtern-des-occidental">Zusammenhänge zwischen deutschen Fremdwörtern und Stammwörtern des Occidental</a></h2>
+<p>Auf den Zusammenhang des Occidental mit unseren deutschen Fremdwörtern ist oft hingewiesen worden. Occ. hilft hierbei nicht nur, diese dem Einsprachler bezw. dem Nichtkenner romanischer Sprachen zu erklären, sondern umgekehrt, Alltags-Stammwörter sich fest einzuprägen. Wer Französ. oder Italienisch kennt, kann nämlich in den seltensten Fällen die entsprechenden Stammwörter im Occ. wiederfinden. Den Franzosen mußte, ehe das Wörterbuch von Berger für sie erschien, die Anleitung gegeben werden, auf internationale Ableitungen bezw. zusammengesetzte Wörter zurückzugehen, z. B. „Ei“ (frz. œuf) zu finden aus „<em>ov</em>al“, also <em>ove</em>. Ebenso finden Italiener das Wort „Stein“ (it. pietra) aus „petroso = steinig“, also petre. Weitere Beispiele lassen sich (s. u.) in Menge finden. Auch der Lateinkenner ist hier nicht immer im Vorteil. Hingegen bieten uns Deutschen die mustergiltigen Verdeutschungen solcher Fremdwörter willkommene Hilfe. Wir unterliegen kaum Verwechselungen, weil die betreffd. Stammwörter alleinstehend in unserer Sprache nie vorkommen. Sogar den international richtigen Auslaut (<em>u</em> bezw. <em>i</em>) lernen wir unversehens mit; man vergl.: <em>manu</em>script = <em>Hand</em>schrift, <em>omni</em>potent = <em>all</em>mächtig, <em>via</em>duct = <em>Weg</em>überführung, <em>cavall</em>erie = <em>Pferde</em>truppe, <em>mar</em>ine = <em>See</em>flotte, <em>See</em>macht, <em>port</em>al = <em>Tor</em>bogen, <em>nov</em>ice = Neuling, <em>dent</em>ist = <em>Zahn</em>techniker, <em>ov</em>al = <em>ei</em>rund, <em>manu</em>al = <em>Hand</em>buch, <em>son</em>or = <em>klang</em>voll, <em>pluvi</em>ale = <em>Regen</em>mantel, <em>spongi</em>osis = <em>Schwamm</em>bildung, <em>ped</em>al = <em>Fuß</em>taste, <em>retro</em>version = <em>Rück</em>übersetzg.</p>
+<p>Zu beachten ist ja bekanntlich, daß bei Zusammensetzung von Substantiven der Bindevokal <em>i</em> bezw. <em>o</em> erscheint, während das vereinzelte Wort sonst auf <em>e</em> ausgeht, also: <em>vivi</em>section, <em>Leben</em>szerschneidung, <em>pedi</em>cure = <em>Fuß</em>pflege, <em>mani</em>cure = <em>Hand</em>pflege, <em>pluvio</em>metre = <em>Regen</em>messer, <em>patri</em>arch = <em>Erzvater</em>, <em>plani</em>metrie = <em>Flächen</em>lehre, <em>sono</em>metre = <em>Schall</em>messer.</p>
+<p>Übrigens tritt ein solches <em>i</em> auch häufig als Anlaut von Endsilben auf, z. B. bei -<em>i</em>ficar, -<em>i</em>gar, -<em>i</em>car, -<em>i</em>dar, -<em>i</em>sar, also in den Wörtern: <em>paci</em>fist = <em>Friedens</em>freund, <em>navi</em>gation = Schiffahrt. Im allgemeinen kommt für Substantive ja wie bei dem System Interlingua die Form des lateinischen Genitivs in Frage, also témpore – Zeit, crimine = Verbrechen, radica = Wurzel, nómine = Name, órdine = Ordnung, origine = Ursprung. Wir kennen sie aus den Fremdwörtern: <em>temporär, kriminell, radikal, nominell, ordinär, originell</em>. Gegen diese bisher gezeigten Beispiele vergleiche man nun: <em>frz.</em> main = Hand, voie = Weg, cheval = Pferd, mer = die See, nouveau = neu, pluie = Regen, éponge = Schwamm, pied = Fuß, paix = Friede, navire = Schiff, vie = Leben, père = Vater, und ferner <em>ital.</em> piede = Fuß, vita = Leben, tempo = Zeit, nome = Name, spugna = Schwamm, piov<em>uta</em> = Regen (das Geregnete).</p>
+<p>Die meisten solcher Nebenformen fußen auf dem Latein, welchem sehr oft die italien. Form gleichkommt oder ähnelt. Sprechen wir also unsere schöne deutsche Sprache ohne fremdes Beiwerk und retten wir die Stümpfe der abgeholzten Fremdwörter als Grundstock für unser Occidental! Sie können dann zuweilen auch noch ein germanisches Reis sprossen lassen. Manche ableitenden Silben können z. B. ebensogut wie germanisch wirken: viv<em>i</em> = lebend<em>i</em>g, quadruped<em>i</em> = vierbeinig, vent<em>i</em> = wind<em>i</em>g, <em>in</em>viver se = sich <em>ein</em>leben, <em>ab</em>ciser = <em>ab</em>schneiden, <em>ab</em>verter = <em>ab</em>schwenken. Doch das wäre einer Betrachtung für sich wert.</p>
+<p>W. K.</p>
+<hr />
+<p>Herausgeber: Deutscher Occidental-Sprachbund, Johannes Quensel, Günthersleben, Postscheck Erfurt 259 81.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="der-deutsche-occidentalist-8"><a class="header" href="#der-deutsche-occidentalist-8">Der deutsche Occidentalist</a></h1>
+<p>2. Jahrgang №  9 (21) —  1. November 1934</p>
+<p>Mitteilungsblatt des Deutschen Occidental-Sprachbundes, Günthersleben Th.</p>
+<hr />
+<h2 id="li-provenientie-del-germanes-in-bohemia"><a class="header" href="#li-provenientie-del-germanes-in-bohemia">Li provenientie del Germanes in Bohemia</a></h2>
+<p>Quam on save, li Germanes in Bohemia sta in un difficil combatte con li ductent nation del tchecoslovakian state. Solmen per firm solidaritá (Sudetendeutsche Heimatsfront!) illi va posser obtener lor natural jures. Li Germanes adver ne posse unionar se statalmen con li conpatriotes in Germania (1919 esset un missuccess!), ma illi posse perducter lor cultural scopes. Durant 1933 illi ha declarat se publicmen por li state Bohemia in su old limites, a quel illi apartene desde li maxim old témpores con omni e egal jures. On mey regrettar hodie, que Bohemia ne ha esset germanisat completmen. Ma it anc es bon por li hodial situation del Germanes, que nequande ha evenit un tal fortiativ colonisation. Noi posse constatar con li historic veritá, que durant li 11. e 12. centennie li ducs resp. reyes de Bohemia e Moravia ha vocat Germanes quam colonisatores ad in lor land, provisat per german jures citeal. Precipue Praha devenit un sede de german mercatores. Alor Bohemia esset un vasall-state del german imperia. Su reyentes esset amicos e parentes del german dynastie del ›Saxones‹. Naturalmen un tal suprematie de Germania super Bohemia ne hat esset attinat sin combatte. Ja ›Charlemagne‹ desde 805 hat postulat tributes fro Bohemia, tande Arnulf de Carintia (Kärnten), Heinrich I., Otto I. Sempre Bohemia ha conservat un cert independentie, e li reyentie del ›Habsburger‹ preferli esset un personalunion con li reyia Bohemia. Quande Bohemia ne ja esset subyugat per li ›Karolinger‹, li du nationes ha tolerat unaltru: in mani regiones li old german population ha conservat se! On ha explorat, que in veritá nequandes li ›Quades‹ e ›Marcomannes‹ ha desapparit o ha esset slavisat till li ultim mann, quande li plupart de tis serchat novi domicilies in li hodial Bavaria (6. centennie) e li tchecos esset inmigrante occupant sin combatte li land. Li Germanes ha tradit les quelc nomines ex li celtic epoca, p. ex. li fluvie-nomines ›Iser‹, ›March‹, li land-nomine ›Mähren‹ (land sur li ›March‹), li monte ›Rip‹ proxim Praha. Altri nomines directmen es old-german o traduction ad in li Slavian, p. ex. Bärn (loc), Schwarzawa (fluvie), Zwittawa (= blanc fluvie), Oskawa (= fluvie con fraxines = Eschenfluß), Vltawa (= Moldau, old-german ›Vilthawa‹ = ›Wildbach‹ = furiosi river.) Per to is es pruvat, que sur li ›March‹ (proxim Brünn e Olmütz), e sur li ›Elbe‹ proxim Praha fort nestes (insules) de Germanes ha conservat se till li hodial die. Ti regiones esset ja in old tempores sin forestes, ergo cultivabil. Li colonisatores del 11. e 12. centennie tande ha extirpat li grand forestes del limit-regiones, quo clarmen demonstra li loc-nomines de ti tempor. Illi accorda con li nomines in li vicini Silesia, Bavaria, Saxonia, Austria, p. ex. Friedland, Reichenberg, Stannern.</p>
+<p>Ceterli li unesim reyent del slavian Bohemia esset un franconian (mainfränkischer) mercator, Samo (circa 650). Plu tard noi audi pri 6 ducs, de queles li un esset un germani (Herimann). Li commercial trafic de Bohemia fat se con li regiones del ›Oberpfalz‹, del ›Main‹ e del ›Donau‹. Bohemia debi omni su cultur al Germanes, mem li literatur-lingue a german professores. Lass nos succurser nor german fratres ta!</p>
+<p>Walter Karch, Leipzig.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="der-deutsche-occidentalist-9"><a class="header" href="#der-deutsche-occidentalist-9">Der deutsche Occidentalist</a></h1>
+<p>2. Jahrgang №  10 (22) —  15. November 1934</p>
+<p>Mitteilungsblatt des Deutschen Occidental-Sprachbundes (G.O.F.)</p>
+<hr />
+<h2 id="li-terminologie-del-shac-lude"><a class="header" href="#li-terminologie-del-shac-lude">Li terminologie del shac-lude</a></h2>
+<p>Sovente li shac-lude es nominat li ›reyal lude‹, e que it porta ti nómine con plen jure, pruva a nos su historie, comensant circa six cent annus ante Christo, in India. Alquicos cert pri su origine on ne save, ma li régules del lude changeat poc a poc in li curs del sécules, till que illi atin’et in li medievie li statu essent valid ancor hodie. 1561 apparit li unésim theorie del ›occidental‹ shac-lude, li autor de quel esset li hispan clerico e shac-maestro Ruy Lopez, qui pro su eminent lud-arte esset vocat al corte del hispan rey. Durant li secuent sécules presc omni cultur-nationes del occidente contribuet famosi nómines al liste del grand-maestros sur li sixantquar casas. Noi audi li nómines Damiano, Greco, Philidor, Andersen, Morphy e mult altris quam irrefutabil prova por li ínexhaustibil bellesse e profundesse de ti unic lude. On vell posser dubitar classificar li shac quam <em>lude</em>, si on conosse li extension de su theorie e li desfacilitá luder it correctmen.</p>
+<p>In India li 64 casas del shac-tábul esset nominat ‚granieres‘, e li arabos usat li expression ›dom‹ por casa. De to veni nor parol ›casa‹, quel significa in li italian e hispan lingue ›dom‹.* Noi va usar li secuent notation por indicar li síngul casa:</p>
+<p><img src="./img/chac-tabul.png" alt="Ilustration de un shac-tabul con colonnes A-H e ranges 1-8." /></p>
+<p>* Ramstedt usa por casa ›quadre‹.</p>
+<p>Li nómines del shac-figures o pieces es in Occidental: li rey (abreviat signe de notation: R); li dama o reyina (D); li turre o rocco (T); li cursor o alfil (C); e li saltator o cavaliero (S). Li pion recive su signe de notation P solmen si it es necessi por evitar miscomprenses.</p>
+<p>Li shac-lude esset in li medievie forsan ancor plu populari quam hodie, ma con li differentie, que on ludet pro moné. Mem li cléricos sur li púlpit usat li expressiones del shac-lude por allegorisar lor predicas. Li clerico Cessolis inventet 1275 p. Chr. special e caracterisant nómines por li piones:</p>
+<ul>
+<li>h2 (h7) esset li paisan,</li>
+<li>g2 (g7) " " forjero,</li>
+<li>f2 (f7) " " notario,</li>
+<li>e2 (e7) " " mercator,</li>
+<li>d2 (d7) " " medico,</li>
+<li>c2 (c7) " " hósped,</li>
+<li>b2 (b7) " " guardian e</li>
+<li>a2 (a7) " " rixard.</li>
+</ul>
+<p>Li piones sur d2, e2, d7, e7 es li medial piones dominant li centre (d4, e4, d5, e5). Ultra to noi conosse duplic e triplic piones, it es piones stant detra unaltru, por exemple Pf2, Pf3. Ligat piones es Pd2, Pe3, proque d2 defende e3 e talmen es ligat con it. Isolat piones ha perdit lor camarades durant li curs del combatte sur li shac-tábul e sovente es in li sam dangere quam li retardat piones, queles ne posset secuer lor avansant camarades. Un liber pion ne vide avan se piones del adversario e marcha con succurs de figures de su propri colore al unésim linea del adversario, ú il vole e deve devenir officero (dama, turre, cursor o saltator).</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="der-deutsche-occidentalist-10"><a class="header" href="#der-deutsche-occidentalist-10">Der deutsche Occidentalist</a></h1>
+<p>2. Jahrgang №  11 (23) —  1. Dezember 1934</p>
+<p>Mitteilungsblatt des Deutschen Occidental-Sprachbundes (German Occidental-Federation)</p>
+<hr />
+<h2 id="li-terminologie-del-shac-lude-continuation"><a class="header" href="#li-terminologie-del-shac-lude-continuation">Li terminologie del shac-lude (continuation)</a></h2>
+<p>Li adversario posse stoppar o prender un tal liber pion tre sovente solmen per sacrificies. Un blanc pion stant sur li quinésim linea, sammen quam un nigri pion stant sur li quadrésim linea, have li jure prender piones del adversario ›en passant‹ si tis veni de lor original position e vole tirar du casas (quadres) por evitar esser prendet. Li adversario in ti casu have li jure prender li pion de su contrari colore quam si it vell har tirat solmen ún casa: f5 sta un blanc pion, la adversario tira su pion g7 a g5: nu li blanc pion posse prender en passant (si il vole): On prende li nigri pion del tábul e posi li blanc pion sur g6. Li duplic attaca de un pion defendet a du officeros stant dextra e left avan le, es nominat un ›furc‹, e si li attacant pion ne posse esser prendet, un del du officeros es perdit, proque ye li proxim move o tira posse escapar solmen un. Tande li adversario gan’a li qualitá, proque il da un pion e recive un officero. Li un ludero talmen es fortiat sacrificar ínvoluntarimen.</p>
+<p>On posse ›roccar‹ solmen si li rey ne ja ha fat un move. Li roccada eveni talmen que on posi li turre apú li rey e li rey salta super le al altri láter. Secun que on prende li turre de h1 (h8) o de a1 (a8) por posir le apú li rey, it es li curt o li long roccada. Anc li turre con quel on vole roccar deve esser ancor in su original position sin har fat alquel move. Li roccada ne es permisset por tirar li rey ex li shac o si li rey deve passar un casa dominat de un piece del adversario.</p>
+<p>Li theorie del overturas e del finludes ne posse esser tractat ci pro su tro grand amplexion. Un ›gambit‹ significa li conscient sacrificie de un pion por reciver un plu fort attaca. Li gambit posse esser acceptet o refusat. Un move o tira anc es nominat un tempo. Si un ludero es plu fort quam su adversario, il posse dar un officero in avantagie.</p>
+<p>Li final scope del shac-lude es: dar shac-mat al rey del adversario. To ne sempre es possibil. Li lude anc posse adducter parties e positiones queles es ›remis‹ o índecis per shac perpetui o per que li du reyes sta contra unaltru sin haver ni un piece, o per que li rey del adversario es pat, it es, li rey ne posse tirar proque il sur chascun casa accessibil por le vell reciver shac e su tot altri figures es ja prendet o stoppat talmen que illi ne posse tirar. In li finlude es li rey sovente un del max fort pieces. Li opposition del reyes decide sovente li fate del partie. Por indicar li curs de un partie on usa li secuent signes:</p>
+<ul>
+<li>– significa li move de un piece: Sg1 – f3;</li>
+<li>x significa, que un piece prende li altri: Sf3 x e5;</li>
+<li>+ significa, que li piece da shac al rey del adversario: Dd1–h5+;</li>
+<li># significa shac e mat;</li>
+<li>! (!!) sta detra un move tre bon o quel merite attention;</li>
+<li>? (??) sta detra un move evidentmen mal o almen dubitábil.</li>
+</ul>
+<hr />
+<p>Coid. G. Prinz, Bernburg, ha spensat e donat Rm. 5.– por Germ. Occ. Federation. Cordial mersía!</p>
+<hr />
+<p>Deutscher Occidental-Sprachbund, Bundesleiter Joh. Quensel, Günthersleben ü. Gotha, Postscheck Erfurt 259 81.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="der-deutsche-occidentalist-11"><a class="header" href="#der-deutsche-occidentalist-11">Der deutsche Occidentalist</a></h1>
+<p>2. Jahrgang №  12 (24) —  15. Dezemb. 1934.</p>
+<p>Mitteilungsblatt des Deutschen-Occidental Sprachbundes, Günthersleben</p>
+<hr />
+<h2 id="li-german-occidental-federation-marcha-in-li-nov-annu-1935"><a class="header" href="#li-german-occidental-federation-marcha-in-li-nov-annu-1935">Li German Occidental-Federation marcha in li nov annu 1935</a></h2>
+<p>De Johannes Quensel, presidente del German Occidental-Federation</p>
+<p>Ye comensa del nov annu yo saluta omni coidealistes cordialmen e mersía pro li interesse con quel li majorité ha stat a <em>OCCIDENTAL</em> e al German Occidental-Federation. Noi vole desirar e promesser li sam bon volentie por li futur.</p>
+<p>Ad avan!</p>
+<p>Vu questiona, car coidealistes, per quel maniere realisar tal intention? Ples amemorar ti 5 punctus</p>
+<ol>
+<li>
+<p>Mey vu leer con attentivitá chascun numeró del <em>German Occidentalist</em>, specialmen si nor micri revue communicatori es vor unic letura Occidental</p>
+</li>
+<li>
+<p>Ma, ne obliviar, <em>Vu have li occasion multiplicar</em> li volúmine de <em>ti letura</em> si vu abonna (ó reabonna!) <em>COSMOGLOTTA</em>, li revue mensual scrit in e por OCCIDENTAL. – It es solmen necessi inviar RM 2 90 al postchecconto Occidental-Buró, Chapelle (Waadt) Schweiz, Nr 1683 36, Amt Berlin. Por un duplic abonnament annual (RM 5 80) vu recive <em>tri</em> exemplares chascun mensu (do un gratuitmen, por propaganda etc.)</p>
+</li>
+<li>
+<p>Un plen delicie procura vos li apprension de Occidental per li standard-ovre „OCCIDENTAL DIE WELTSPRACHE“. Vu posse comprar it che coidealist Mildebrath, Bernau bei Berlin, Postscheckkonto Nr. 696 76, Amt Berlin, o che li German Occidental-Federation, postchec ví che 5. Precie ligat: RM 3–, broch RM 2– incl postage</p>
+</li>
+<li>
+<p>Ples declarar vos pret por correspondentie Occidental con altri german coidealistes. Solmen avisar vor complet adresse al German Occidental-Federation (ví che 5!) e strax it va esser citat in li proxim numeró del German Occidentalist sub li rubrica „MEDIATION DE CORRESPONDENTIE“. Bentost vu va esser convictet del joya resultant de ti interprense!</p>
+</li>
+<li>
+<p>In fin noi peti succurser nor serios intentiones manifestat in li numerós 5 e 7/1934 de German Occidentalist per <em>subventiones</em>. Ples payar al secuent postchecconto:</p>
+</li>
+</ol>
+<p>Johannes Quensel, Günthersleben über Gotha, Nr. 259 81, Amt Erfurt (Ci vu anc have <em>li adresse del German Occidental-Federation</em>)</p>
+<p>Ti coidealistes qui ja ha penetrat plu profundmen in li bell lingue Occidental posse far <em>exámen</em> „<em>de docent de Occidental</em>“. Ples informar vos pri to che li German Occidental-Federation.</p>
+<hr />
+<p>Un retrospection demonstra que it esset possibil conservar li númere del ancian coidealistes. Adplu un cert númere de nor coidealistes ea recrutat de queles singules labora passabilmen activ. <em>LI CHANCES</em> de nor federation ne es mal nam per li methode de propaganda scritiv li reunion sta reconstructet.</p>
+<p>Li German Occidental-Federation sta fidel al ver communité national-socialistic del nov Germania e por repetir, noi es fier, que Occidental <em>SELF</em> da nos li possibilitá collaborar ye nor parte al erudition del larg masse de compatriotes. --</p>
+<p>Coidealist Janotta invitat, solmen per Cosmoglotta a un congress Occidentalistic a Vienna. Secun li sufficentmen conosset mal trafic-possibilitá de Germania a Austria li German Occidental-Federation refusa ti convent in Austria. --</p>
+<p>Sr. <em>Edgar de Wahl</em>, Reval (Tallinn), ha proposit completar li liste del membres de CELIA (= <em>C</em>omité <em>e</em>xplorativ de <em>L</em>ingue <em>I</em>nternational <em>A</em>uxiliari) per li nómines secuent:</p>
+<ul>
+<li>Coid. <em>Mildebrath</em>, W., Bernau/Berlin,</li>
+<li>" M. Ad. <em>Fritzsche</em>, Leipzig S 3,</li>
+<li>" Walter <em>Karch</em>, Leipzig [???],</li>
+<li>" Joh. <em>Quensel</em>, Günthersleben/Gotha</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="der-deutsche-occidentalist-12"><a class="header" href="#der-deutsche-occidentalist-12">Der deutsche Occidentalist</a></h1>
+<p>3. Jahr №  1 (25) —  1. Januar 1935.</p>
+<p>Mitteilungsblatt des Deutschen Occidental-Sprachbundes (German Occidental-Federation).</p>
+<p>Bundesleiter: Lehrer Johannes Quensel, Günthersleben über Gotha. Postscheckkonto Erfurt 259 81.</p>
+<hr />
+<h2 id="pro-quo-merces-japanesi-tam-modic"><a class="header" href="#pro-quo-merces-japanesi-tam-modic">Pro quo merces japanesi tam modic?</a></h2>
+<p>Desde quelc annus Japan exporta grand quantités de merces a presc omni partes del munde, mem a Europa industriat. Ili es modic, in mani casus modicissim; ili do sovent successa. Multes es astonat de to e questiona, pro quo li industrie japanesi posse producter tam modic.</p>
+<p>Un special exploration del statistic officie de Japan revela un del factores de ti enorm modicitá: li bass custes pri li subsistentie de vive che li families del manual laboreros e del officiates (industrial, commercial e. t.). Li secuent factes interessant resulta:</p>
+<p>Li mensual salarie del persones explorat es minimal de ca. 50 Yen e maximal de ca. 100 Yen. (1 Yen = ca. 0.75 Mark german)</p>
+<p>Ex to adplu:</p>
+<p>Li mensual salarie de un manual laborere = 83.43 Yen (medial valore).</p>
+<p>Li mensual salarie de un officiate = 92.23 Yen (medial valore).</p>
+<p>Li divers partes del mensual expenses, presentat e in li summe de Yen e in li percentage:</p>
+<table>
+<tr><td>Li <i>expenses</i> pri:</td><td colspan="4"><i>Salarie</i> de</td></tr>
+<tr><td></td><td colspan="2">laborere:</td><td colspan="2">officiate:</td></tr>
+<tr><td></td><td>Yen</td><td>%</td><td>Yen</td><td>%</td></tr>
+<tr><td>victuales</td><td>25.83</td><td>35</td><td>26,34</td><td>32</td></tr>
+<tr><td>luagie de logí</td><td>12.69</td><td>17</td><td>15,60</td><td>19</td></tr>
+<tr><td>calentament, luce</td><td>3.36</td><td>5</td><td>3.95</td><td>5</td></tr>
+<tr><td>vestimentes</td><td>9.35</td><td>13</td><td>10.86</td><td>13</td></tr>
+<tr><td>diverses</td><td>21.85</td><td>30</td><td>25.71</td><td>31</td></tr>
+</table>
+<p>(Comparante li salarie e li summe del expenses, on vide que mem resta quelc Yen ne consumat.) On nu mey comparar li correspondent salaries e expenses in Europa e America industrial. Tande on clarmen vide ti un factor del modicitá del merces japanesi. Ti exportation es necess. Nam li sempre crescent population vole viver e laborar. On do sercha nov mercates por li merces abundant. In Europa on save que Japan ha constituet li imperia Manchucuo precipue quam futur mercat por su industrie e quam land por su emigrant homes.</p>
+<p>Japan vole exportar a Europa. Europa vole exportar a Japan quam til nu. Anc ci li question: Quande organisation del mund-economie?</p>
+<p>G. Prinz, Bernburg.</p>
+<h2 id="linguistic-internationalitá"><a class="header" href="#linguistic-internationalitá">Linguistic internationalitá</a></h2>
+<p>„Der Irrgarten der Sprache“ es un libre tre interessant por omni interlinguistes. It illustra in cert manier li articul de nor car coid. Dr. Peipers in quel il caracterisa li difficultás de traduction. Anc in ti libre per mult exemples on posse apprender que it ne sempre es possibil usar sam paroles international por sam notiones; it existe che quelc paroles solmen semi-internationalitá.</p>
+<p>Tri exemples. Controlar (D kontrollieren) ne es homonym con li angles „to controle“. Li german expression significa circa inspecter, durant que li angles have li signification de presider.</p>
+<p>On conosse du altri catastrophal exemples del guerre mundial con queles li adversarios manipulat contra nor patria. Li paroles „cadaver“ e „materiale“. Cadaver expresse che li romanes in general „Leiche“, do anc de homes e ne solmen quam in german de animales. Ergo tande it esset tre facil scrir „in quel manier es tractat li cadavres che nos“ – ma nor cadavres ne esset li sam quam li del altres! In fin, „materiale“ por nos germanes es ne solmen coses inorganic, ma anc organic. Sin degrada on parla in Germania de „hom-materiale“, „scolero-materiale“ etc. Quam barbaric to posse apparer a chascun qui ne prende li specific german modo de ti expression. Adver che li international paroles anc noi ne deve concluder absolutmen de nor lingual usu a li del altri popules.</p>
+<p>Qu.</p>
+<h2 id="esque-vu-ja-ha-abonnat-cosmoglotta-por-li-nov-annu"><a class="header" href="#esque-vu-ja-ha-abonnat-cosmoglotta-por-li-nov-annu">Esque Vu ja ha abonnat COSMOGLOTTA por li nov annu?</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="der-deutsche-occidentalist-13"><a class="header" href="#der-deutsche-occidentalist-13">Der deutsche Occidentalist</a></h1>
+<p>Mitteilungsblatt des Deutschen Occidental-Sprachbundes (German Occidental-Federation).</p>
+<p>3. Jahrgang — 15. Januar 1935 — №  2 (26)</p>
+<hr />
+<h2 id="eveniment-ne-omnidial"><a class="header" href="#eveniment-ne-omnidial">Eveniment ne omnidial</a></h2>
+<p>Literatura — Joh. Quensel</p>
+<p>In li Tiergartenstraße de Berlin un mann laceronesc jace ecrasat de un automobil. Homes maledí e reprimanda. Un policist nota li chaufero. On vole transportar li vulnerat in un hospital. Ma il cria in su dolores quande on tucha le. Un médico dá al publicum un signe que li vive del qui havet li accident conta solmen minutes. In ti moment un yun puella presse se tra li homes, illa agenua apú li morient, prende su cap in su brasses e dí: Yo vole assister vos; ples repetir mi paroles tam bon quam vu posse. E illa comensa: Nor patre qui es in li ciel...</p>
+<p>Astonat e fixmen regarda li vagabund. Poy on vide subrider le e – il balbutia li paroles: Sanctificat es tu nómin, mey venir tu reyatu.</p>
+<p>Li medico ha demettet su chapel, li altres fá li sam. Mem li demi-adult garson demette su chap benque il esset pret li anterior moment mocar pri li morient.</p>
+<p>Pian ma clar on audi li paroles del yun puella in li complet silentie. Balbutiant parla li stertorant ti fine:</p>
+<p>Tui es li reyatu, li fortie e li glorie, in eternitá; amén. --</p>
+<p>„Qui compati con li povre, presta a Deo; il va recompensar le!“</p>
+<h2 id="du-historiettes-pri-frederic-li-grand"><a class="header" href="#du-historiettes-pri-frederic-li-grand">Du historiettes pri Frederic li Grand</a></h2>
+<p>Pos li guerre de set annus li grenaderos negociat lor sabres mettente vice illi simplic lignes in li estuche. Frederic audient it devenit tre indignos. Il fat intrar in órdine li regiment e vocat ad exter du soldates. „Prende tu sabre e decupa li cap a ti-ci!“ „Ma, ... yo do ne posse it, yo ne have permission...“ „Tu deve decupar li cap a il!“ Alor li grenadero directet su regarda vers li ciel e parlat secuent paroles: „Deo, tu ne posse voler que un innocent ea mortat, pro to lass devenir mi sabre lignin!“</p>
+<p>Quande nu li grenadero fat nud su sabre, vermen, it esset lignin... Li rey detornat se por celar que il ridet.</p>
+<hr />
+<p>Monstruositá hat evenit in Berlin. Un comto G. hat mariat su propri nevessa. Un delegation del clero de Berlin reclamat it che Frederic li Grand. Li rey fat adducter li comte. Li clericos stat plen de joya. Nu li odios comte vell sufrer un contentant tónner-tempe. Li comte venit. „Esque Vu ha sposat Vor nevessa?“ „Sí, Majestie, yo fat it!“ „Na fá it ancor un vez!..“ esset li judicament del rey.</p>
+<h2 id="chronica-qualmen-occidental-marcha-adavan"><a class="header" href="#chronica-qualmen-occidental-marcha-adavan">Chronica: Qualmen Occidental marcha adavan!</a></h2>
+<p><strong>COSMOGLOTTA</strong> Official organ del Occidental-Union. №  8 (99) Dec. 1934. Ci-vez Cosmoglotta fá nos un special joya per addition de un folie: Nor canzoniere, collection de canzones in Occ., folie 1. Arrangeat per coid. Dr. Nidecker de Basel. Va esser continuat. In plus noi gratula Cosmoglotta ye su centésim caderne, certmen un bell pruva por li crescentie e durabilitá de Occidental!</p>
+<p><strong>ANGLIA</strong> INTERLINGUIST. №  3 (15) 1934. Labora por Occidental in Anglia. (Interlanguage Association of Great Britain, 40 Saint Andrew Street, London S.W.)</p>
+<p><strong>SVEDIA</strong> SVENSKA OCCIDENTAL FÖRBUNDETS: MEDLEMSBLAD, №  7, 8; 1934.</p>
+<p><strong>TCHECOSLOVACIA</strong> Buró de Occidental, PRAHA VII, ČS, Škroupova 2. Circulare 1–4.</p>
+<h2 id="vor-deventie-esser-un-activ-occidentalist-in-1935"><a class="header" href="#vor-deventie-esser-un-activ-occidentalist-in-1935">Vor deventie: Esser un ACTIV Occidentalist in 1935</a></h2>
+<hr />
+<p>Deutscher Occidental-Sprachbund, Leiter Johannes Quensel, Günthersleben über Gotha / Thür.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="german-occidentalist-8"><a class="header" href="#german-occidentalist-8">GERMAN OCCIDENTALIST</a></h1>
+<p>Mitteilungsblatt des Deutschen OCCIDENTAL Sprachbundes, GOF.</p>
+<p>3. Jahrgang — 1. Februar 1935 — Nr. 3 (27)</p>
+<hr />
+<h2 id="nov-mediation-de-correspondentie-"><a class="header" href="#nov-mediation-de-correspondentie-">NOV MEDIATION DE CORRESPONDENTIE !!</a></h2>
+<p>Car coidealistes, ---</p>
+<p>Esque Vu conosse, in fact, homes qui nomina se chac-ludores – ma illi ne lude chac? O esque Vu ama tis qui lude cartes solmen quam – spectatores?!</p>
+<p>Coidealistes, támen li situation de Occidental, in cert mod, es ancor conform a un match de football: 2 x 11 fa li currida e li lucte, e 11000 exhorta o applauda – quam spectatores...</p>
+<p>Ma li nov sport-movement commensa hodie ja detornar se de un tal monoton particularitá. Solmen 5000 spectatores – li altri curre nu self, gymnastica se, jetta li disco o salta trans hagaturas; in curt: illi practica self li sport!</p>
+<p>E nu, it es solmen lu sam a realisar che OCCIDENTAL.</p>
+<p>Vu questiona in qual maniere? Noi responde: PER CORRESPONDENTIE !!</p>
+<p>Vu deve participar, car coidealist!</p>
+<p>Ples misser strax Vor complet adresse al signator de infra. Il invia poy al unesim participant: un lettre pri UN NEUTRAL THEMA ACTUAL.</p>
+<p>Li destinatario lee it ne solmen, ma il adjunte su propri pensas al thema, naturalmen il scri OCCIDENTAL! – Li duesim recive li lettre, il acte egalmen. Quam li duesim fa it li triesim, tam li quadresim e omni secuentes. Ergo, chascun lee e <em>scri</em>! (Li ultim participant rendi li plu e plu completat lettre, nu ja un specie de "brochura", al expeditor, e li circulare ea li via "da capo" – ma circummisset es nu solmen li materiale <em>nov</em> por li proxim.</p>
+<p>Por ne peccar contra li commun custom, noi commensa parlar pri li – tempe. Li prim thema es do "Hiverne". Noi demanda Vor aventuras hivernal de omni sort desde Vor yunesse til li unesim alb capilles... (mey noi omnes devenir denov tutmen yun!) – Adplu Vu mey notar Vor reflexiones serios e esperantios queles productet in Vos li alb cumpan... durant shi-tures o chasses o slitt-cursiones o anc al camin. O Esque Vu have observationes scientific o tal altri opiniones pri li thema? O Vu vole <em>traducter</em> alquicos? Omnicos es rect (exceptet solmen inutil e minucios critica).</p>
+<p>Do, Vu es convocat al collabor! – Ja sta fixat li secuent themas.</p>
+<p>Ples dar Vor adresse al president del GERMAN OCCIDENTAL FEDERATION:</p>
+<p>Johannes Q u e n s e l, Günthersleben über Gotha;</p>
+<p>Postscheckkonto: 259 81, E r f u r t.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="german-occidentalist-9"><a class="header" href="#german-occidentalist-9">GERMAN OCCIDENTALIST</a></h1>
+<p>Mitteilungsblatt des Deutschen OCCIDENTAL Sprachbundes, GOF.</p>
+<p>3. Jahrgang — 15. Februar 1935 — Nr. 4 (28)</p>
+<hr />
+<h2 id="curt-grammatica-de-o-c-c-i-d-e-n-t-a-l"><a class="header" href="#curt-grammatica-de-o-c-c-i-d-e-n-t-a-l">Curt Grammatica de O C C I D E N T A L,</a></h2>
+<p>publicat secun pluri desires de nov coidealistes qui ne lee COSMOGLOTTA, de u es prendet li secuent poc lineas contenent li tot systema grammatical del excellent lingue auxiliari Occidental.</p>
+<ul>
+<li>Infinitives: Finale -r; ex.: fini-r, ama-r, deve-r.</li>
+<li>Adjectives: Finale inobligatori -i; ex.: micr-i.</li>
+<li>Adverbies: Finale -men; ex.: visibil-men, regulari-men.</li>
+<li>Present del verbes: Li radica sol; ex.: yo fini, tu ama, il deve.</li>
+<li>Passate: Finale -t; ex.: noi fini-t, vu ama-t, illi deve-t.</li>
+<li>Passate composit: Per auxiliare ha-r; ex.: illa ha finit, it hat esset</li>
+<li>Future: Auxiliare va; ex.: on va finir, yo va amar.</li>
+<li>Conditionale: Auxiliare vell; ex.: tu vell finir, il vell prender.</li>
+<li>Imperative: ples, o li radica sol; ex.: ples finir! prende!</li>
+<li>Participie present: -nt; ex.: ama-nt, vident; fini-<em>e</em>nt.</li>
+<li>Participie passat: -t; ex.: ama-t, tu ha vide-t, illa hat finit.</li>
+<li>Gerundive ("indem, während ich.."): -nte; ex.: veniente ex mi porta yo videt te (während <em>ich</em> kam, sah <em>ich</em>).</li>
+<li>Masculin: -o; feminin: -a (ma inobligatori); plurale: -s o -es (pro euphonie).</li>
+<li>Un sol articul definit: li (invariabil anc in plural).</li>
+<li>Adjectives invariabil.</li>
+</ul>
+<p>Wir empfehlen: Okzidental die Weltsprache, das Hauptwerk über Occidental in deutscher Sprache; 256 Seiten, mit ausreichendem Wörterverzeichnis. Zu beziehen von Coidealist W. M i l d e b r a t h, Bernau bei B e r l i n; Postscheckkonto: 696 76, B e r l i n. Preise: geh. RM 2.–; geb. RM 3.–, einschliesslich Porto.</p>
+<h2 id="beitragszahlung"><a class="header" href="#beitragszahlung">Beitragszahlung</a></h2>
+<p>Alle Freunde unserer Sache bitten wir um den Jahresbeitrag für 1935 in Höhe von RM 2.50, zu zahlen auf Postscheckkonto: Quensel, Günthersleben über Gotha; 259 81, E r f u r t. Wir werden diejenigen, die den Beitrag bezahlen, zugleich als Mitglieder registrieren, soweit sie sich nicht schon früher zur Mitgliedschaft gemeldet haben. Gern nehmen wir Teilbeträge an.</p>
+<p>Schliesslich bitten wir noch alle diejenigen, die gar keinen Wert mehr auf die Zustellung des Mitteilungsblattes legen, uns dies kurz durch Postkarte mitzuteilen. Wir sind dann in der Lage, diese Exemplare zur Propaganda einzusetzen, wodurch unserer Sache besser gedient wird.</p>
+<p>Nochmals seien alle Interessenten auf unsere "Kettenrundbriefe" hingewiesen (vor. Mitt.blatt!), die uns den Gebrauch des OCCIDENTAL in einfacher und nützlicher Weise gewähren.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="german-occidentalist-10"><a class="header" href="#german-occidentalist-10">GERMAN OCCIDENTALIST</a></h1>
+<p>Mitteilungsblatt des Deutschen OCCIDENTAL Sprachbundes, GOF.</p>
+<p>3. Jahrgang — 1. März 1935 — Nr. 5 (29)</p>
+<hr />
+<h2 id="ad-u-li-german-occidentalist-veni-svedia"><a class="header" href="#ad-u-li-german-occidentalist-veni-svedia">Ad u li German Occidentalist veni: SVEDIA!</a></h2>
+<p>K a r l s t a d.</p>
+<p>Inter li 24 sved provincias V ä r m l a n d es forsan conosset quam un del max bell. Mult turistes de divers landes frequenta ti provincia, specialmen li bell valley Fryksdalen. Ta, in Mårbacka, li famos autor Dr. Selma Lagerlöf logia.</p>
+<p>Li capital cité in Värmland es Karlstad along li rive del Vänern. Tra li cité flue li bell fluvie Klarälven quel dona al cité un aspect de vive e belless. Karlstad esset fundat del sved rey Carl IX in annu 1584. Li cité augmenta se constant e have nu plu quam 26000 membres.</p>
+<p>Inter official institutiones noi nomina li gymnasium, Värmlands museum, li Catedral, li Betlehems Ecclesia etc. Un turist-buro existe anc, e ti just nu annuncia specialmen pri Germania e signala mem li O l y m p i a d in Germania 1936! Li relvias Stockholm – Oslo, Göteborg – Kil passa préter Karlstad e ultra to numerosi omnibusses corresponde in omni directiones del provincia.</p>
+<p>Ne obliviar visitar V ä r m l a n d  e nor cité capital quande Vu viagea in Svedia.</p>
+<p>Un citean de K.</p>
+<p>(Lass me revelar, it es coid. Erhard, past. in K., un del fidel letores de nor micri revue G.O.)</p>
+<h2 id="perdit-amore"><a class="header" href="#perdit-amore">PERDIT AMORE</a></h2>
+<p>"Tui felicie e tui amore eleva se avan me quam un etern aurore." Goethe.</p>
+<p>Mort es mi felicie, mort mi amore! Pos un curt témpore plen de joya, plen de omni felicitá, queles jamá li dies ha posset conceder a un ente mortal – omnicos ha finit. Lu passat ha passat, etern e ínretornabil.</p>
+<p>Un fuiard, serchant salvar se avan li munde e lor inquietá, yo de nu ad sempre deve migrar durant li dies ancor restant me.</p>
+<p>Quam trans un vel yo regarda vers retro e detra ti vel yo vide te, mi amata. Inmobil e tristmen reposa tui ocules sur me, tristmen e plen de lácrimes.</p>
+<p>Tálmen tu va acompaniar me durant mi tot vive, durant omni ti dies queles va evenir por me solitari e vacui.</p>
+<p>Esque to omnicos devet evenir? Qui have culpa? Esque tu? Esque yo? Li fate? O li homes con lor leyes e mores contra queles noi ne posset haver li audacie a resister!</p>
+<p>Yo vole provar tolerar ti munde, ti homes, e supportar mi sorte brav e coragiosmen. Ma yo desira li fine; li fine – it ne posse esser lontan.</p>
+<p>(Labor original de Johannes Schuh, un nov e tre activ coid.)</p>
+<hr />
+<p>Deu. Occ. Sprachbund / Leiter: Joh. Quensel, Günthersleben über Gotha.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="german-occidentalist-11"><a class="header" href="#german-occidentalist-11">GERMAN OCCIDENTALIST</a></h1>
+<p>Mitteilungsblatt des Deutschen OCCIDENTAL Sprachbundes, GOF.</p>
+<p>3. Jahrgang — 15. März 1935 — Nr. 6 (30)</p>
+<hr />
+<h2 id="die-grammatische-struktur-des-occidental"><a class="header" href="#die-grammatische-struktur-des-occidental">Die grammatische Struktur des Occidental.</a></h2>
+<p>Die Weltsprache muss wohl ihrem Wortschatz nach in der Hauptsache romanisch sein, aber für ihr Gefüge, d.h. die zum Ausdruck von Gedanken – Sätzen – nötigen, auf einander abgestimmten Formen, kann sie sich nur moderne Sprachen zum Muster nehmen, insbes. Englisch. An vielen dieser Formen hat auch unsere deutsche Sprache Anteil. Überhaupt ist Occidental auch in dieser Hinsicht gemeineuropäisch und tritt so in wohltuenden Gegensatz zu den Weltsprachen aus der Vorkriegszeit (Espo, Ido, Latino). Schon der Flexionscharakter des Occidental berührt völlig deutsch. Wir kennen jetzt auch das Mehrzahl -s, in Jungens, Mädels, Sofas, Autos (Espo -oj, Ido -i). Noch weiter geht hierin das <em>Afrikaans</em>, die holländische Sprache Südafrikas (fraue<em>s</em>, vader<em>s</em>, mann<em>s</em>). Das Infinitiv -r finden wir ebenfalls an deutschen Wortstämmen: hausieren, pausieren, kutschieren (Espo/Ido: -i). Das -t des Imperfekts (hol<em>t</em>e, führ<em>t</em>e) sowie des Mittelworts (gehol<em>t</em>, geführ<em>t</em>) ist förmlich sprachlich international (engl. -e<em>d</em>, span. -d), während Espo/Ido hier nur -s mit Vokalwechsel kennen (<em>i</em>s). Dura<em>nt</em> ist unser dauer<em>nd</em>.</p>
+<p>Ein wesentlicher Fortschritt des Occidental war die Analytik der Zeitwortformen, z.B. mittels <em>va</em> (werde), <em>Ha</em> (habe), <em>vell</em> (würde), <em>sta</em> (ist); vgl. Ido: parl<em>abis</em> = hat gesprochen. Latino erfand für die Vergangenhaeit die ganz unnatürliche Vorpartikel i (i ama = ha amat).</p>
+<p>Auch so manches andere ist aus germanischem Sprachgeist entsprungen, z.B. die Akkusativform quem (port.; vgl. engl. whom), das sächliche Gattungswort <em>lu</em> (lu bon <em>das</em> Gute, lu bell <em>das</em> Schöne; Espo: la bonajo, la belajo), entstanden aus dem lat. illud, neben lo, la, li. Wie klar und schön wirkt <em>lo</em> bell, <em>la</em> bell, un bell<em>a</em> = un<em>a</em> bell neben Espo la bell<em>ulo</em>, la bell<em>ulino</em>! Und zeigt nicht der vokalische Auslaut der Gegenwartsform (ich lieb<em>e</em>, ich hol<em>e</em> = yo am<em>a</em>, yo apport<em>a</em>) das Teilhaben an sprachlich internationaler Struktur? Bei Zahlformen sind gar deutsche Besonderheiten zulässig: tri<em>deci</em> = dreizehn, quardeci = vierzehn. Ist nicht -ant das Gegenstück zu unserem -zig: quarant = vierzig (vgl. Quarantäne), Espo kvardek (wörtlich – irrtümlich! – : vierzehn!)?</p>
+<p>Labor original de coid. Walter Karch, Leipzig. Continuation secue!</p>
+<h2 id="selection--american--de-un-officiario"><a class="header" href="#selection--american--de-un-officiario">SELECTION – AMERICAN – DE UN OFFICIARIO</a></h2>
+<p>Alqui fabricatore havet li intention ingagear un secretario. Secun li anuncia in un grand jurnale il recivet presc 600 offertes e in commensa il ne savet quo far, nam solmen hasardmen il volet electer.</p>
+<p>Ma li qualitas practic del americano facilmen victet. Ante que il appertet li lettres il strax forprendet tis sur queles li adresse esset scrit incorrectmen o trovat se in fals loc; adplu tis sur queles li post-marca esset agglutinat desordinarimen e tande tis a queles li vovertes esset sórdid.</p>
+<p>(Trad. de coid. Schuh. Va esser contin.)</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="german-occidentalist-12"><a class="header" href="#german-occidentalist-12">GERMAN OCCIDENTALIST</a></h1>
+<p>Mitteilungsblatt des Deutschen OCCIDENTAL Sprachbundes, GOF.</p>
+<p>3. Jahrgang — 1. April 1935 — Nr. 7 (31)</p>
+<hr />
+<h2 id="continuation-selection-american-de-un-officiario"><a class="header" href="#continuation-selection-american-de-un-officiario">Continuation: Selection american de un officiario</a></h2>
+<p>Li restant lettres il appertet. Li duesim election fat remover omni offertes de queles paper e covert ne esset conform in color e grandore, de queles li folies esset plicat incorrectmen e sur queles li textu esset fat inordinarimen arangeat.</p>
+<p>Nu il commensat traleer li restagie e annular li lettres queles contenet scri-erras, correcturas e mancas in styl e interpunction. Finli – restat quar lettres scrit satisfant..</p>
+<p>Li quar qui hat scrit ti lettres il nu invitat li un pos li altri in su contor. Un havet un cravatte incorrectmen nodat. Un altri ne esset frisc rasat. Li vestage del triesim esset sórdid. Solmen li quadresim il ingageat! supposant que un hom qui exactmen scri, accuratmen fa vestir se e nett rasa se, anc va plenar correctmen omni deventies de su servicie.</p>
+<p>(Trad. de coid. Johannes Schuh, Morsbach/Sieg.)</p>
+<p>((Considerante que hodie es li 1-esim de april li machine-scritor es tam liber adjunter que il ne es li quadresim del aspirantes. Proquó? Nu, Vu vide ya self...))</p>
+<h2 id="fortsetzung-die-grammatische-struktur-des-occidental"><a class="header" href="#fortsetzung-die-grammatische-struktur-des-occidental">Fortsetzung: Die grammatische Struktur des Occidental,</a></h2>
+<p>vorgesehen für diese Nummer, muss aus technischen Gründen – leider – für die nächste verschoben werden.</p>
+<hr />
+<p>Heute gilt es, nochmals alle Coidealisten aufzufordern, auf COSMOGLOTTA zu abonnieren bzw. für das Abonnement nun Zahlung zu leisten. Das Postscheckkonto hierfür lautet: Occidental-Buro, Chapelle (Vaud), Schweiz; 1683 36, B e r l i n. Das <em>Jahres</em>abonnement kostet 3.50 schw.Frc. (Auskunft über den jeweiligen Gegenwert geben die Postanstalten bereitwillig.)</p>
+<p>Ferner weisen wir nochmals auf die Beitragszahlung für unseren Bund hin. Ihn oder auch freiwillige Spenden bitten wir zu zahlen auf Postscheckkonto: Quensel, Günthersleben über Gotha; 259 81, E r f u r t.</p>
+<p>Important noticie <em>por omni activ coidealistes</em>!</p>
+<p>In mensu de mai va haver loc un <em>privat</em> congress de divers amicos de OCCIDENTAL in B e r n a u  bei Berlin.</p>
+<p>Qui desira partiprender ti mey strax scrir a:</p>
+<p>Johannes Quensel, Günthersleben über Gotha; Deutscher OCCIDENTAL Sprachbund.</p>
+<p>Esque Vu ha declarat Vos pret al nov specie de correspondentie in nor bell lingue OCCIDENTAL? Noi attende bentost Vor decision. Nam si noi vole scrir ancor pri hiverne, .. never Vu comprende?! Bentost, car amic!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="der-deutsche-occidentalist-14"><a class="header" href="#der-deutsche-occidentalist-14">Der deutsche Occidentalist</a></h1>
+<h1 id="german-occidentalist-13"><a class="header" href="#german-occidentalist-13">German Occidentalist</a></h1>
+<p>Mitteilungsblatt des Deutschen Occidental-Sprachbundes (German Occidental-Federation)</p>
+<p>3. Jahrgang — Am 1. Mai 1935 — №  8 (32)</p>
+<hr />
+<p>Ad ú li German Occidentlist veni:</p>
+<h2 id="oedenburg-in-hungaria"><a class="header" href="#oedenburg-in-hungaria">Oedenburg in Hungaria</a></h2>
+<p>Pos li pace de Trianon, desde 15 annus, li tam fortmen mutilat Hungaria possede solmen un unic cité con considerabil german population: Oedenburg (officialmen: Sopron). Situat in li west angul del land, it representa li transition del germanic al hungaric territoria lingual. Anc su position inter li extrem excurrentes del Alpes e li hungarian bass-terren con li grand Neusiedlersee (Fertő tó) monstra un statu marginal.</p>
+<p>Essente un liber cité reyal desde 1277, (conosset ja durant li Roman e mem celtic témpores sub li nómin Scarbantia, e mentionat in 845 quam Odinburch) su assiduos borgeses gardat intra su fort mures un cultura, quel lassat nos quam material heredagie gotic ecclesias con renascential tresores, e barocc domes con imperial garnituras. Durant sécules it esset un refugie del religios reformation e hodie it excelle per su alt gradu de erudition inter omni cités provincial de Hungaria e ta es li sede de un facultate de evangelic theologie e de un facultate montanistic, metallurgic e forestal. Al cité appartene 10 000 hectar forestes, li miniera de lignit Brennberg e li lithium-sulphuric balne Wolfs. Inter su triant-quin mill habitantes es ancor hodie 15 000 germanes, respectivmen 10 000 protestantes (li altris magyar e catholic roman.)</p>
+<p>Nequel german visitator de Hungaria mey omisser vider Oedenburg quel es ligat a Wien (70 km) per du lineas de relvia e un de autobus e per un linea de ferrovia tra Raab (Győr), (80 km) a Budapest (200 km). Li modic vive in li bell old cité con su muséos e li agreabil circumité proviset per modern etablissementes, quam nov hoteles e plage-balnes, li verdi montes ornat per belvederes, li alcoholic sangue del vinieras extendet vers li curativ lago attrae in omni annu plu mult forenes. Anc un parte del interlinguistes, li adeptes de Ido ha congressat ta in 1930 e forsan pluri de nor coidealistes rememora ti dies, hante devenit interim adherentes de Occidental.</p>
+<p>E. K. MOESS.</p>
+<h2 id="der-erzieherische-wert-des-occidental"><a class="header" href="#der-erzieherische-wert-des-occidental">Der erzieherische Wert des Occidental</a></h2>
+<p>„Warum lernen Sie noch nicht Occidental?“ – Diese Frage ist bis jetzt vielleicht noch nicht an Sie gerichtet worden. Und wenn heute der Deutsche Occidental-Sprachbund Ihnen diese Frage stellt, so ist es vor allem sein Wunsch, Sie darauf aufmerksam zu machen, dass es <em>Ihr eigener Vorteil</em> ist, wenn Sie Occidental lernen. Sie bereichern Ihre innere Welt um vieles und tragen einen Baustein zum Fortschritt der Menschheit bei. – Die Grundlage des Occidental bilden die lebenden internationalen Wörter und die Gesetze, welche man aus ihnen abgeleitet hat. Dieses natürliche Fundament ist fester und sicherer als alles willkürliche Regelwerk. Das Occidental hat den unschätzbaren Vorteil, dass es dem Schüler den Schlüssel für die Deutung der zahlreichen Fremdwörter in die Hand gibt. Occidental kann es wirklich für sich in Anspruch nehmen, <em>ein wahres Volksbildungsmittel</em> zu sein, denn es ermöglicht auch dem Menschen mit einfacher Schulbildung den Anschluss an die grosse geistige Kulturgemeinschaft des Abendlandes.</p>
+<p>Deutscher Occidental-Sprachbund (German Occidental-Federation)</p>
+<p>Leiter Joh. Quensel, Günthersleben über Gotha in Thüringen</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="der-deutsche-occidentalist-15"><a class="header" href="#der-deutsche-occidentalist-15">Der deutsche Occidentalist</a></h1>
+<p>Mitteilungsblatt des Deutschen Occidental-Sprachbundes, Günthersleben über Gotha in Th.</p>
+<p>3. Jahrgang — Am 15. Mai 1935 — №  9 (33)</p>
+<hr />
+<h2 id="die-grammatische-struktur-des-occidental-1"><a class="header" href="#die-grammatische-struktur-des-occidental-1">Die grammatische Struktur des Occidental</a></h2>
+<p>Von Walter Karch.</p>
+<p>Satzbau und Stil der Weltsprache sind rein statistisch vielleicht stark romanisch bedingt, da auch Englisch sich in seiner Phraseologie vielfach dem Romanischen angeglichen hat. Doch sind von jeher in der Plansprache viele deutsche Satzkonstruktionen aufgetreten und geduldet worden. Die Gleichberechtigung des Deutschen ist durch dessen Bedeutung als Wissenschafts- und Literatursprache auch vollauf gerechtfertigt. Allzuviel Regeln lassen sich hierbei nicht geben, z.B. hinsichtlich des Gebrauchs der richtigen Präposition (ad, pri, fro, ye, in), Adverbien, Pronomen (ob qual oder quel, tal oder tel), über reflexive Verben (astonar oder astonar <em>se</em>), doppelte Verneinung (yo <em>ne</em> ha videt <em>ne</em>cos), des Dativs (próxim <em>al</em> scop oder <em>li</em> scop), des Artikels, Plurals, Infinitivs usw. Solche nationalen Eigentümlichkeiten machen Occidental durchaus nicht unverständlich, würden das Erlernen durch Westeuropäer sogar erschweren. Wenn Deutschland sich heutzutage sogar von lateinischer Grammatik freimacht und eine „arteigene Sprachlehre“ anstrebt, so sehe ich gerade in der oben aufgezeigten Möglichkeit gewisser syntaktischer Freiheiten im Occidental den Weg, muttersprachliche Art auch in der Plansprache zu pflegen. Man soll nicht das Kind mit dem Bade ausschütten. Soll man aus solchen engen nationalen Gründen eine „Mischsprache“ ablehnen? In diesem Zusammenhang sei noch darauf hingewiesen, dass sich jetzt im Occidental auch die Inversion beim Fragesatz einbürgert (vgl. das Lehrbuch von Berger): Have vu un automobil? = Esque vu have un automobil? Eine reichhaltige und innerhalb gewisser Grenzen doch unverbindliche Flexionsmöglichkeit ist immer besser als gar keine (siehe Latino!).</p>
+<h2 id="erwiderung"><a class="header" href="#erwiderung">Erwiderung</a></h2>
+<p>In einer Zuschrift mcht Herr <em>Josef Weisbart</em>, der Schöpfer des <em>Mundi-Latin</em> auf einige angebliche Unstimmigkeiten in meinem Aufsatz aufmerksam. Das macht eine rein sachliche Erwiderung nötig, denn ich weiss, dass Herr Weisbart eine positiv-günstige Einstellung zu Occidental hat. Ausserdem will ich gern gestehen, dass mir persönlich Mundi-Latin von allen Latino-Systemen im Sinne Peanos einzig und allein zusagt.</p>
+<p>Dass Spanisch viel mit Occidental gemeinsam hat, habe ich nicht behauptet, denn Spanisch ist zu synthetisch.</p>
+<p>Wenn ich das passivische Mittelwort des Espo-Ido (mi estas am<em>a</em>ta, mi estas am<em>i</em>ta, mi est<em>o</em>s am<em>a</em>ta) nicht erwähnte, so geschah das deshalb, weil bei diesem <em>verwirrenden</em>, <em>völlig willkürlichen Vokalwechsel</em> sowieso das <em>t</em> unwesentlich wird.</p>
+<p>Weiterhin berichtigt Herr Weisbart, dass die Vorpartikel <em>i</em> des Latino sine flexione von manchen Benutzern auch für die Bildung der Zukunftsform verwendet wird. Das würde also schlagend beweisen, dass sie für die Vergangenheitsform untauglich ist, denn <em>i</em> stammt von lat. <em>ire</em>, entspricht also unserem <em>va</em> (= geht): ego <em>i</em> ama = yo <em>va</em> amar.</p>
+<p>Ob <em>lu</em> natürlich ist oder nicht, so dient es doch ebenso wie das Suffix <em>-ant</em>, unser -<em>zig</em> (tri<em>ant</em> = 30, tre<em>nt</em>e, thir<em>ty</em>) einer in germanischen Sprachen üblichen Klarheit und Kürze. Der Aufsatz behandelte ja nicht nur <em>formengleiche</em> Struktur! Vielleicht könnte man <em>lu</em> einsparen und durch Analytik geben: li bon <em>cos</em>, entsprechend omni<em>cos</em> bon (= alles Gute).</p>
+<p>Dass <em>quem</em> aus dem Sanskrit stammt, weiss ich nicht. [quem ist im Lat. Akk.-Form zu qui (mask. Form des Relativums)]. Es ist ja eine portugiesische Form, als vielleicht Schöpfung der Westgoten oder Vandalen. Hierbei scheint zuzutreffen, was Günther in der „Rassenkunde“ sagt: „Als die germanischen Sprachen in Spanien, Italien und Frankreich schwanden (Westgotisch, Langobardisch, Burgundisch, Fränkisch), strömte nordische Schöpferkraft in die aus dem Vulgärlatein entfalteten romanischen Sprachen, die bis dahin noch ohne <em>literarische Bedeutung</em> geblieben waren.</p>
+<p>Fortsetzung der Erwiderung in №  11 (35)!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="der-deutsche-occidentalist-16"><a class="header" href="#der-deutsche-occidentalist-16">Der deutsche Occidentalist</a></h1>
+<p>Mitteilungsblatt des deutschen Occidental-Bundes, Günthersleben über Gotha in Thür.</p>
+<p>3. Jahrgang — Am 1. Juni 1935 — №  10 (34)</p>
+<hr />
+<h2 id="das-esperanto-wunder"><a class="header" href="#das-esperanto-wunder">"DAS ESPERANTO WUNDER"</a></h2>
+<p>Wir Occidentalisten sind es von jeher gewöhnt, daß die Esperantisten ihre Werbeaufsätze mit reichlich kühnen Behauptungen spicken. Man versucht, den Eindruck zu erwecken, als sei Esperanti die herrlichste Sprachschöpfung auf Gottes weitem Erdboden und selbst Esperantisten sind oft der ehrlichen Überzeugung, es könne wirklich nichts Besseres und Vollkommneres geben als Esperanto. Ein Beispiel dieser esperantistischen Naivität liefert uns ein kürzlich im "Deutschen Esperantisten" erschienener Aufsatz von Oberschulrat Dr. Kraner über "Esperanto und Schule".</p>
+<p>Kurz gesagt: "für uns ist Esperanto das, was man in der kaufmännischen Sprache einen "Ladenhüter" zu nennen pflegt. Psychologisch überaltert, sprachlich unmöglich, wirkt Esperanto mit seinen krausen Formen auf uns, wie ein Kraftwagen aus dem Jahre 1900. Um so weniger erfreulich ist es, wenn dieser "Ladenhüter" dem unbefangenen Nichtfachmann mit superlativischen Redensarten "angedreht" wird.</p>
+<p>Im Anfange seines Aufsatzes meint der Verfasser, daß der Weg zum Endsieg des Esperanto (!) über die Schulen gehen müsse. Und betrübt stellt er fest: "Wir erfahren auch immer wieder von neuem, daß unserem Bemühen, dem Esperanto dort eine Stätte zu bereiten, die stärksten Widerstände entgegengesetzt werden." Dieser intellektuelle Widerstand gegen das Eindringen des Esperanto in den Schulbetrieb wird Gottseidank nie verschwinden, denn welcher Philologe liesse sich diese Verballhornung europäischen Sprachgeistes als da Ideal einer Weltsprache aufdrängen? Muss nicht jeder Sprachfachmann dem Weltsprachgedanken ein für alle Mal gram werden, wenn ihm gesagt wird, Esperanto sei <em>die</em> Weltsprache und das Non-plus-ultra bewußter Sprachschöpfung?</p>
+<p>Wir stellen hier ganz offen und eindeutig fest, daß die von Herrn Dr. Kraner in seinem Aufsatz gegebene Charakterisierung des Esperanto irreführend und in keiner Weise zutreffend ist. Es handelt sich hier um eine Täuschung des unbefangenen Publikums. Wir erinnern nur an die Vernichtende Abfertigung, welche Esperanto vom Sprachsachverständigen des Völkerbundes erfahren hat. Wer das wahre Wesen des Esperanto kennen lernen will, muß in der einschlägigen *nicht-*esperantistischen Literatur nachschlagen. Herr Dr. Kraner behauptet, Esperanto entspräche "....tatsächlich den höchsten an eine Welthilfssprache zu stellenden Anforderungen...". In ihm wäre "Kein Wort, das inbezug auf seine lautliche und inhaltliche Eignung nicht aufs genauste erwogen worden wäre...",.geistvoll und schön..", "..ein immer neu aufsprudelnde Quelle reinen Kunstgenusses.." usw.</p>
+<p>Was, Herr Dr. Kraner irreführenderweise vom Esperanto behauptet, das können wir getrost vom Occidental sagen und auch <em>beweisen!</em> Occidental "... wahrt den äusseren und inneren Zusammenhang mit den geschichtlich gewordenen, frei gewachsenen wichtigsten Sprachen des europäischen Kulturkreises. Es stellt eine Weiterentwicklung, Vereinheitlichung und Vereinfachung jener Sprachen dar...".</p>
+<p>Jedem Einsichtigen ist es klar, daß die Erlernung des Esperanto das natürliche Sprachgefühl eher verbildet, als schärft und fördert. Manche Volksgenossen verwenden Zeit und Mühe auf Esperanto, weil sie glauben, damit etwas Dauerhaftes und Wertvolles zu erwerben. Sie wissen nicht, daß sie lediglich den Interessen esperantistischer Verleger dienen. Esperanto und die gesamte Esperanto-Literatur gehören in die Rumpelkammer. Eine längere Erklärung dazu erübrigt sich. Wir warnen jeden Volksgenossen, Zeit und Mühe mit Esperanto zu verlieren!</p>
+<p>Auskunft über alle Weltsprachefragen und über Occidental erteilt</p>
+<p>Emil Kurt Neumann, Dresden-N-6, Görlitzer Strasse 35, oder</p>
+<p>der Leiter des Deutschen Occidental-Sprachbundes (German Occidental-Federation), Günthersleben über Gotha in Thüringen.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="der-deutsche-occidentallist"><a class="header" href="#der-deutsche-occidentallist">Der Deutsche Occidentallist</a></h1>
+<p>Mitteilungsblatt des deutschen Occidental-Sprachbundes (German Occidental-Federation)</p>
+<p>3. Jahrgang — Am 15. Juni 1935 — №  11 (35)</p>
+<hr />
+<h2 id="occidental-ist-keine-künstliche-welthilfssprache"><a class="header" href="#occidental-ist-keine-künstliche-welthilfssprache">OCCIDENTAL ist keine künstliche Welthilfssprache!</a></h2>
+<p>Der <em>Reichs</em>- und Preussische Minister für Wissenschaft, Erziehung und Volksbildung hat unter Nr. 283 in seinem Amtsblatt vom 17. Mai d.J. einen Erlass "Esperantosprache" herausgegeben, der durch einen Aufsatz von Ministerialrat Kohlbach (im gleichen Amtsblatt, Ausgabe vom 5. Juni d.j./1935) ergänzt wird. Die Abschrift des Erlasses lautet:</p>
+<p>"Esperantosprache. Die Pflege künstlich geschaffener Welthilfssprachen wie der Esperantosprache hat im nationalsozialistischen Staate keinen Raum. Ihr Gebrauch führt dazu, wesentliche Werte völkischer Eigenart zu schwächen. Es ist daher von jeder Förderung eines Unterrichts in solchen Sprachen abzusehen. Unterrichtsräume sind für diesen Zweck nicht zur Verfügung zu stellen" (folgt Ausfertigung, Unterschrift usw.)</p>
+<p>Der deutsche Occidental-Sprachbund begrüsst die eindeutige Ablehnung des Esperanto-Kauderwelsches voll und ganz und stellt für <em>Occidental</em> fest:</p>
+<p>Occidental heißt "Abendländisch". Dem Abendland sind durch die Jahrhunderte seiner gemeinsamen Geschichte und Kultur gewisse Kulturgüter und demzufolge auch Kulturbegriffe und -wörter gemeinsam geworden, so daß sie nun von allen durchschnittsgebildeten Abendländern, ja darüber hinaus von allen Menschen abendländischer Erziehung und Kultur gleich oder doch annähernd gleich erlebt und verstanden werden.</p>
+<p>So erklärt sich die Tatsache, daß in einem gewissen Maasse allen Kultursprachen von allgemeiner Bedeutung und Geltung <em>ein</em> Stamm gleicher Kulturbegriffe und Kulturwörter innewohnt. Zusammengefaßt kann man dies <em>natürlich</em> vorhandene, stetig gebrauchte also sprachlich <em>lebendige</em> Wortmaterial als eine natürliche gemeinsam-abendländische "Sprache" bezeichnen.</p>
+<p><em>Occidental ist also nicht künstlich geschaffen.</em> Occidental ist keine Welt<em>hilfs</em>sprache! <em>Occidental schwächt nicht die völkische Eigenart!</em></p>
+<p>Der deutsche Occidental-Sprachbund hat es sich satzungsgemäß zur Aufgabe gemacht, den deutschen Volksgenossen, die das Bestreben danach haben, diesen allgemein-abendländischen Wort- und Kulturschatz organisch erschliessen zu helfen und so an seinem besonderen Teil national bildend zu wirken.</p>
+<p>Warum wir interessierten Volksgenossen aber nur diesen Wörtern von allgemeiner Sprachgeltung ihr Augenmerk und ihren Fleiss zuzuwenden empfehlen und nicht das Erlernen von <em>Fremdsprachen</em> empfehlen, hat diesen Grund: "Nur die wenigsten Volksgenossen benötigen eine Beherrschung von Fremdsprachen; nur die wenigstens bringen es zu einer Beherrschung! (Vgl. Adolf Hitler: "Mein Kampf, § 454 ff. der einbändigen Ausgabe.) Die <em>Kulturwertwörter</em> aber sind uns Deutschen fast ausnahmslos irgeendwie aus unserer deutschen Kultur- und Muttersprache von heute bekannt. Sie Zwingen uns also nichts Fremdes auf, weder im Kulturellen (Einleben in eine <em>völkisch fremde</em> Welt!), noch im Sprachlichen (<em>völkisch fremder</em> Wortschatz, unserem völkischen Sprachgefühl fremder Satzbau u. dergl.).</p>
+<p>Daß sich diese Occidentalen Wörter zu einem <em>NATÜRLICHEN Sprachgefüge</em> verbinden, ist nicht die Folge einer unfruchtbaren intellektualistischen Spielerei, sondern folgt für den Sprachbegabten aus der ihnen innewohnenden natürlichen schöpferischen Sprachkraft genau so, wie sich dem musikalisch Begabten die Töne zu Melodien und Liedern zusammenreihen.</p>
+<p>Johannes Quensel<br />
+Bundesleiter</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="der-deutsche-occidentalist-17"><a class="header" href="#der-deutsche-occidentalist-17">Der deutsche Occidentalist</a></h1>
+<p>Mitteilungsblatt des Deutschen Occidental-Sprachbundes; Leiter Joh. Quensel, Günthersleben ü. Gotha</p>
+<p>3. Jahrgang — Am 1. Juli 1935 — №  12 (36)</p>
+<hr />
+<h2 id="li-machine-de-chiframent"><a class="header" href="#li-machine-de-chiframent">Li machine de chiframent</a></h2>
+<p>De G. Prinz.</p>
+<p>Mult informationes e documentes de administration deve esser secret e comprensibil solmen de ti qui misse e de ti qui recive. Por misser tal secret informationes on usa li chiframent. Aplicar systemas de chiframent por communicationes es un arte desde millennies practicat. Li systema chifratori de Caesar sta conservat, in su principies, til hotémpore; it ha esset plu complicatmen constructet.</p>
+<p>Far chiframentes manuscrit secun tabelles e deschifrar les es un fatigant action. It besona longdurant instruction e continui exercition. In ultra, li manuscrition have mult possibilitás de erra. Pro to it es evident que in nor era del mecanisation, in quel li telefon, cable e radio execute li comunicationes, devenit real li idé de mecanisar li chiframent, por executer it plu rapid e plu secur.</p>
+<p>Li modern machines de chiframent es usat ne solmen por extern inter-relationes, por diplomatic representanties, armés, militari marines, policies, interprensiones comercial o bancal o industrial, companies de navigation, associationes political o economic, cameras de commercie, – ma anc por secret scrition pri ti coses, queles es secretmen conservat, p. ex. processes de fabrication, explicationes de dessin, conventiones etc. Li textu es comprensibil de nequí, ma, si besonat, it posse esser retroformat per machine de chiframent ad in li original textu.</p>
+<p>P. ex. li conosset machine ‹Kryha› have du discos symetricmen installat, un disco pri li original textu e un disco pri li chifrat textu. Un grand númer de claves chifratori es possibil per changear li comensal position de ambi discos, per changear li lítteres, per usar rotes diferentmen dentat. Null element es constant, chascun es permutabil.</p>
+<p>Tri types de ti machine es constructet. Li ‹Kryha-Standard› chifra o deschifra sixant lítteres in un minute. Li ‹Kryha-electroscritor› chifra o deschifra e simultanmen scri 300 lítteres in un minute. On connexe du scri-machines avan e detra li machine de chiframent. Per li unesim scri-machine on scri li original textu, e li duesim scri-machine da li chifrat textu, e inversmen. Li ‹Kryha-Liliput› es un litt apparat de chiframent, essent tam grand quam un normal tasca-horloj.</p>
+<p>Scientic special examination de ti machine de chiframent ha demonstrat que it contene 403 undecilliones de possibil claves chifratori.</p>
+<p>Secun Dr. W. Thoms.</p>
+<h2 id="fortsetzung-der-erwiderung-von-walt-karch-aus---9-33"><a class="header" href="#fortsetzung-der-erwiderung-von-walt-karch-aus---9-33">Fortsetzung der Erwiderung von Walt. Karch aus №  9 (33).</a></h2>
+<p>„... Nordisch-germanischer Geist schuf bei deren Ablösung vom Latein jene den germanischen und romanischen Sprachen eigenen <em>inneren</em> Gemeinsamkeiten. Syntaktisch betrachtet stellen Deutsch, Engl., Franz., Ital. eigentlich nur <em>Dialekte einer einzigen Sprache</em> dar, der <em>Sprache des Abendlandes</em>. Dieses Abendland ist eine Schöpfung der überwiegend <em>nordischen Germanen</em>stämme des Mittelalters.“</p>
+<p>Vorliegend gekennzeichnete Struktur trifft auch für Englisch zu, bis auf <em>lu</em>. Die Weltsprache soll garnicht deutsche Struktur haben. Noch <em>mehr englische</em> Struktur würde hingegen in Deutschland nach meinen Erfahrungen nicht abgelehnt.</p>
+<p>Walter Karch.</p>
+<hr />
+<p><em>Beitragseingänge</em> usw.: 2.50 RM von Joseph <em>Gär</em>; 5.– RM. von W. <em>Mildebrath</em>; 5.– RM. von H. <em>Fischer</em> und M. <em>Singer</em>; 2.50 RM. von Dr. F. <em>Werner</em>; 3.– RM von G. <em>Prinz</em>.</p>
+<p>Allen Coidealisten herzlichen Dank!</p>
+<p>Joh. Quensel, Postscheck Erfurt 25981.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </div>
+    </body>
+</html>
