@@ -127,11 +127,11 @@ window.search = window.search || {};
     
     function formatSearchMetric(count, searchterm) {
         if (count == 1) {
-            return count + " search result for '" + searchterm + "':";
+            return count + " resultate por '" + searchterm + "':";
         } else if (count == 0) {
-            return "No search results for '" + searchterm + "'.";
+            return "Null resultates por '" + searchterm + "'.";
         } else {
-            return count + " search results for '" + searchterm + "':";
+            return count + " resultates por '" + searchterm + "':";
         }
     }
     
