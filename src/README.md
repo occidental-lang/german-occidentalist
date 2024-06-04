@@ -2,7 +2,7 @@
 
 ## Benevenit!
 
-Ci vu trova li numerós 1 til 36 (sin 4, 10, 11, 12) del revúe *German Occidentalist*, editet in li annus 1930 del German Occidental-Federation (Deutscher Occidental-Sprachbund).
+Ci vu trova transscrites del numerós 1 til 36 (sin 4, 10, 11, 12) del revúe *German Occidentalist*, editet in li annus 1930 del German Occidental-Federation (Deutscher Occidental-Sprachbund).
 
 Li federation inviat it al membres por informar pri su activitá, ma it contenet anc altri articules pri divers temas. Li activitá del federation, quel havet 24 membres, esset prohibit del guvernament national-socialistic in junio 1936.
 
