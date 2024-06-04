@@ -9,5 +9,5 @@ mdbook build
 git commit -am "<your changes>"
 
 # re-apply manual patches overwritten by mdbook
-git cherry-pick 8c2023f89795accfd7abc0ded3d8358e23503489
+git cherry-pick b14eff8b934aa401a344887a20c05d84f1eac5a2
 ```
