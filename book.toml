@@ -8,8 +8,8 @@ src = "src"
 
 [output.html]
 no-section-label = true
-default-theme = "occ"
-preferred-dark-theme = "occ"
+default-theme = "rust"
+preferred-dark-theme = "rust"
 
 [output.html.search]
 use-boolean-and = true
